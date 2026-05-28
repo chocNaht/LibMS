@@ -1,0 +1,9 @@
+﻿# Ignore local database files
+*.mdf
+*.ldf
+
+# Ignore build artifacts
+bin/
+obj/
+.vs/
+*.user
