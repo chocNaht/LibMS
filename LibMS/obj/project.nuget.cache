@@ -26,15 +26,5 @@
     "C:\\Users\\user\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.16.0\\system.identitymodel.tokens.jwt.8.16.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file C:\\Users\\user\\Desktop\\LibMS\\LibMS\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\LibMS.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\LibMS.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }
