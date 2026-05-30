@@ -30,7 +30,6 @@
         {
             panelleft1 = new Panel();
             panellogin = new Panel();
-            visible1 = new Button();
             btnAdm1 = new Button();
             btnStud1 = new Button();
             label8 = new Label();
@@ -51,6 +50,7 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            visible1 = new Button();
             hide1 = new Button();
             panellogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -102,18 +102,6 @@
             panellogin.Name = "panellogin";
             panellogin.Size = new Size(565, 562);
             panellogin.TabIndex = 1;
-            // 
-            // visible1
-            // 
-            visible1.FlatAppearance.BorderSize = 0;
-            visible1.FlatStyle = FlatStyle.Flat;
-            visible1.Image = Properties.Resources.visible__1_1;
-            visible1.Location = new Point(428, 279);
-            visible1.Name = "visible1";
-            visible1.Size = new Size(27, 27);
-            visible1.TabIndex = 0;
-            visible1.UseVisualStyleBackColor = true;
-            visible1.Click += visible1_Click;
             // 
             // btnAdm1
             // 
@@ -277,7 +265,6 @@
             // 
             txtPass1.Location = new Point(158, 279);
             txtPass1.Name = "txtPass1";
-            txtPass1.PasswordChar = '*';
             txtPass1.Size = new Size(269, 27);
             txtPass1.TabIndex = 6;
             txtPass1.Text = "Password";
@@ -318,6 +305,18 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            // 
+            // visible1
+            // 
+            visible1.FlatAppearance.BorderSize = 0;
+            visible1.FlatStyle = FlatStyle.Flat;
+            visible1.Image = Properties.Resources.visible__1_1;
+            visible1.Location = new Point(428, 279);
+            visible1.Name = "visible1";
+            visible1.Size = new Size(27, 27);
+            visible1.TabIndex = 0;
+            visible1.UseVisualStyleBackColor = true;
+            visible1.Click += visible1_Click;
             // 
             // hide1
             // 

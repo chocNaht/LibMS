@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e255c7fa5006f31b78c0eaf198fa85dc89d3d92f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+271f5790a88a55626c8f0dfb01fc19cb06396b4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
