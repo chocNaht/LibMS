@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\admin\\source\\repos\\LibMS\\LibMS\\LibMS.csproj": {}
   },
   "projects": {
@@ -12,9 +13,27 @@
         "projectPath": "C:\\Users\\admin\\source\\repos\\LibMS\\LibMS\\LibMS.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\admin\\source\\repos\\LibMS\\LibMS\\obj\\",
+=======
+    "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\LibMS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\LibMS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\LibMS.csproj",
+        "projectName": "LibMS",
+        "projectPath": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\LibMS.csproj",
+        "packagesPath": "C:\\Users\\kenum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< Updated upstream
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\kenum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,6 +70,10 @@
             "Guna.UI2.WinForms": {
               "target": "Package",
               "version": "[2.0.4.7, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
