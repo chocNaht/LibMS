@@ -19,9 +19,6 @@ namespace LibMS
 
             btnStud1.BackColor = Color.Gold;
             btnAdm1.BackColor = Color.White;
-
-            txtEmail1.Clear();
-            txtPass1.Clear();
         }
 
         private void btnAdm1_Click(object sender, EventArgs e)
@@ -30,23 +27,28 @@ namespace LibMS
 
             btnAdm1.BackColor = Color.Gold;
             btnStud1.BackColor = Color.White;
-
-            txtEmail1.Clear();
-            txtPass1.Clear();
         }
 
         // Login button click event handler
         private void btnLogin1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(selectedRole))
+            {
+                MessageBox.Show("Please select a role.");
+                return;
+            }
+
             UserRepository repo = new();
 
-            string email = txtEmail1.Text.Trim();
-            string password = txtPass1.Text;
+            bool valid = repo.ValidateUser(
+                txtEmail1.Text.Trim(),
+                txtPass1.Text,
+                selectedRole);
 
-            if (!repo.UserExists(email, password))
+            if (!valid)
             {
                 MessageBox.Show(
-                    "Account does not exist.",
+                    "Invalid email, password, or role.",
                     "Login Failed",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
@@ -54,18 +56,16 @@ namespace LibMS
                 return;
             }
 
-            string? role = repo.GetUserRole(email, password);
-
-            if (role == "STUDENT")
+            if (selectedRole == "STUDENT")
             {
                 new StudDash().Show();
-                Hide();
             }
-            else if (role == "ADMIN")
+            else if (selectedRole == "ADMIN")
             {
                 new AdmDash().Show();
-                Hide();
             }
+
+            Hide();
         }
 
         private void visible1_Click(object sender, EventArgs e)

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\LibMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\dbdata\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +29,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,20 +62,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WelcomeLogin.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
-              "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
-              "RelativeToolTip": "LibMS\\WelcomeLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T15:45:05.827Z",
+              "DocumentIndex": 1,
+              "Title": "query1.sql ",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\App_Data\\query1.sql",
+              "RelativeDocumentMoniker": "LibMS\\App_Data\\query1.sql",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\App_Data\\query1.sql*",
+              "RelativeToolTip": "LibMS\\App_Data\\query1.sql*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-30T16:23:23.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WelcomeLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
               "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.cs",
@@ -76,19 +87,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "WelcomeLogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
+              "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
+              "RelativeToolTip": "LibMS\\WelcomeLogin.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:45:05.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\UserRepository.cs",
               "RelativeDocumentMoniker": "LibMS\\DBData\\UserRepository.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\UserRepository.cs",
               "RelativeToolTip": "LibMS\\DBData\\UserRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwCsAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-30T15:16:23.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\Database.cs",
               "RelativeDocumentMoniker": "LibMS\\DBData\\Database.cs",
@@ -101,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudDash.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
               "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",
@@ -114,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StudDash.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
               "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",

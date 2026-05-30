@@ -1,0 +1,7 @@
+--INSERT INTO Users (UserID, LastName, FirstName, Email, Pass, Roles) VALUES
+--(1001, 'Arroyo', 'Hannah Yasmin', 'arroyo.283633@caloocan.sti.ph', '4everTWICE', 'ADMIN'),
+--(1002, 'Palomares', 'Christian Joseph', 'palomares.284363@caloocan.sti.ph', '101705090506', 'ADMIN'),
+--(1003, 'Umayam', 'Kenrick', 'umayam.282818@caloocan.sti.ph', 'PassMo', 'ADMIN'),
+--(1004, 'Alejo', 'Angelika', 'alejo.390527@caloocan.sti.ph', 'kahitAnoNa', 'STUDENT'),
+--(1005, 'Lumabad', 'Shyroz', 'lumabad.421494@caloocan.sti.ph', 'lblyourHappiness', 'STUDENT'),
+--(1006, 'Ramos', 'Cresta Jane', 'ramos.472859@caloocan.sti.ph' , 'Celestina_0528', 'STUDENT');
