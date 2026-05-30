@@ -4,7 +4,10 @@ namespace LibMS.DBData
 {
     public class UserRepository
     {
-        public bool UserExists(string email, string password)
+        public bool ValidateUser(
+            string email,
+            string password,
+            string role)
         {
             using SqlConnection conn = Database.GetConnection();
 
@@ -14,38 +17,18 @@ namespace LibMS.DBData
                 SELECT COUNT(*)
                 FROM Users
                 WHERE Email = @Email
-                AND Pass = @Password";
+                  AND Pass = @Password
+                  AND Roles = @Role";
 
             using SqlCommand cmd = new(query, conn);
 
             cmd.Parameters.AddWithValue("@Email", email);
             cmd.Parameters.AddWithValue("@Password", password);
+            cmd.Parameters.AddWithValue("@Role", role);
 
             int count = Convert.ToInt32(cmd.ExecuteScalar());
 
             return count > 0;
-        }
-
-        public string? GetUserRole(string email, string password)
-        {
-            using SqlConnection conn = Database.GetConnection();
-
-            conn.Open();
-
-            string query = @"
-                SELECT Roles
-                FROM Users
-                WHERE Email = @Email
-                AND Pass = @Password";
-
-            using SqlCommand cmd = new(query, conn);
-
-            cmd.Parameters.AddWithValue("@Email", email);
-            cmd.Parameters.AddWithValue("@Password", password);
-
-            object? result = cmd.ExecuteScalar();
-
-            return result?.ToString();
         }
     }
 }
