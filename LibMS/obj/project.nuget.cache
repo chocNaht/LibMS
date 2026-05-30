@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9dHXBy3mX3Q=",
+  "dgSpecHash": "9xl/3J3+QQc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\LibMS\\LibMS\\LibMS.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\LibMS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.7\\guna.ui2.winforms.2.0.4.7.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.7\\guna.ui2.winforms.2.0.4.7.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
