@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kenum\\source\\repos\\LibMS\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\LibMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\kenum\\source\\repos\\libms\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\kenum\\source\\repos\\libms\\libms\\student\\studdash.navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\kenum\\source\\repos\\LibMS\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\kenum\\source\\repos\\libms\\libms\\student\\studdash.borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\welcomelogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\welcomelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\kenum\\source\\repos\\libms\\libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\kenum\\source\\repos\\LibMS\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\kenum\\source\\repos\\libms\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,37 +42,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WelcomeLogin.cs",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\WelcomeLogin.cs",
-              "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.cs",
-              "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\WelcomeLogin.cs",
-              "RelativeToolTip": "LibMS\\WelcomeLogin.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAswFsAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T10:03:57.937Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudDash.Navigation.cs",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.Navigation.cs",
-              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Navigation.cs",
-              "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.Navigation.cs",
-              "RelativeToolTip": "LibMS\\Student\\StudDash.Navigation.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAgwCIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T05:05:41.209Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -76,11 +58,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "WelcomeLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.Designer.cs",
+              "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.Designer.cs",
+              "RelativeToolTip": "LibMS\\WelcomeLogin.Designer.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAAAtwCABAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T14:33:17.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WelcomeLogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
+              "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
+              "RelativeToolTip": "LibMS\\WelcomeLogin.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADgv2YAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T10:03:57.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudDash.Navigation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Navigation.cs",
+              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Navigation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Navigation.cs",
+              "RelativeToolTip": "LibMS\\Student\\StudDash.Navigation.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwCIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T05:05:41.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "StudDash.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
               "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Designer.cs",
-              "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
               "RelativeToolTip": "LibMS\\Student\\StudDash.Designer.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAAwMsCAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -88,11 +108,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudDash.Borrow.cs",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.Borrow.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Borrow.cs",
               "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Borrow.cs",
-              "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.Borrow.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Borrow.cs",
               "RelativeToolTip": "LibMS\\Student\\StudDash.Borrow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -100,22 +120,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "WelcomeLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\WelcomeLogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs",
               "RelativeDocumentMoniker": "LibMS\\WelcomeLogin.cs",
-              "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\WelcomeLogin.cs [Design]",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\WelcomeLogin.cs [Design]",
               "RelativeToolTip": "LibMS\\WelcomeLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T10:03:18.335Z"
+              "WhenOpened": "2026-05-30T10:03:18.335Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "StudDash.cs",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
               "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",
-              "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
               "RelativeToolTip": "LibMS\\Student\\StudDash.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -124,12 +145,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StudDash.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
               "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",
               "ToolTip": "C:\\Users\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.cs [Design]",
-              "RelativeToolTip": "LibMS\\Student\\StudDash.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\kenum\\source\\repos\\LibMS\\LibMS\\Student\\StudDash.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-30T05:40:36.871Z"
             }

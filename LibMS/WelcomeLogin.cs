@@ -41,47 +41,53 @@ namespace LibMS
 
         private void btnLogin1_Click(object sender, EventArgs e)
         {
-             string emailAddress = txtEmail1.Text;
-             string password = txtPass1.Text;
+            string emailAddress = txtEmail1.Text;
+            string password = txtPass1.Text;
 
-             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kenum\source\repos\LibMS\LibMS\App_Data\db_LibMS.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True";
-             string login = "SELECT COUNT(*) FROM Users WHERE Email=@email AND Pass=@password";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kenum\source\repos\LibMS\LibMS\App_Data\db_LibMS.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True";
+            string login = "SELECT COUNT(*) FROM Users WHERE Email=@email AND Pass=@password";
 
-             using (Microsoft.Data.SqlClient.SqlConnection cons = new Microsoft.Data.SqlClient.SqlConnection(connectionString))
-              {
-               cons.Open();
-             using (SqlCommand commandDB = new SqlCommand(login, cons))
-              {
-               commandDB.Parameters.AddWithValue("@email", emailAddress);
-               commandDB.Parameters.AddWithValue("@password", password);
-               int users = (int)commandDB.ExecuteScalar();
-             
-               if (selectedRole == "STUDENT")
+            using (Microsoft.Data.SqlClient.SqlConnection cons = new Microsoft.Data.SqlClient.SqlConnection(connectionString))
+            {
+                cons.Open();
+                using (SqlCommand commandDB = new SqlCommand(login, cons))
                 {
-                  if (users > 0)
-                   {
-                    StudDash student = new StudDash();
-                     student.Show();
+                    commandDB.Parameters.AddWithValue("@email", emailAddress);
+                    commandDB.Parameters.AddWithValue("@password", password);
+                    int users = (int)commandDB.ExecuteScalar();
 
-                    this.Hide();
-                } else {
-                 MessageBox.Show("Invalid username or password.");
+                    if (selectedRole == "STUDENT")
+                    {
+                        if (users > 0)
+                        {
+                            StudDash student = new StudDash();
+                            student.Show();
+
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.");
+                        }
+
                     }
-         
-                } else if (selectedRole == "ADMIN")
-                  { 
-                   if (users > 0) {
-                      AdmDash admin = new AdmDash();
-                      admin.Show();
+                    else if (selectedRole == "ADMIN")
+                    {
+                        if (users > 0)
+                        {
+                            AdmDash admin = new AdmDash();
+                            admin.Show();
 
-                      this.Hide();
-                 } else { 
-                 MessageBox.Show("Invalid username or password.");
-             }
-          }
-       }
-    }
- }
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.");
+                        }
+                    }
+                }
+            }
+        }
         private void visible1_Click(object sender, EventArgs e)
         {
             txtPass1.UseSystemPasswordChar = true;
