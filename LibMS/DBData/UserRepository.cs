@@ -30,5 +30,29 @@ namespace LibMS.DBData
 
             return count > 0;
         }
+
+        public int? GetUserId(string email, string password, string role)
+        {
+            using SqlConnection conn = Database.GetConnection();
+
+            conn.Open();
+
+            string query = @"
+            SELECT UserID
+            FROM Users
+            WHERE Email = @Email
+            AND Pass = @Password
+            AND Roles = @Role";
+
+            using SqlCommand cmd = new(query, conn);
+
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@Password", password);
+            cmd.Parameters.AddWithValue("@Role", role);
+
+            object? result = cmd.ExecuteScalar();
+
+            return result == null ? null : Convert.ToInt32(result);
+        }
     }
 }

@@ -1,4 +1,7 @@
 ﻿using System.Windows.Forms;
+using LibMS.Controls;
+using LibMS.DBData;
+using LibMS.Models;
 
 namespace LibMS
 {

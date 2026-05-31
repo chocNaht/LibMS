@@ -58,7 +58,14 @@ namespace LibMS
 
             if (selectedRole == "STUDENT")
             {
-                new StudDash().Show();
+                int? userId =
+                repo.GetUserId(txtEmail1.Text.Trim(), txtPass1.Text, selectedRole);
+
+                if (userId != null)
+                {
+                    new StudDash(userId.Value).Show();
+                    Hide();
+                }
             }
             else if (selectedRole == "ADMIN")
             {
