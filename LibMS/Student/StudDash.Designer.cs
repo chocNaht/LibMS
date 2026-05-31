@@ -677,7 +677,8 @@ namespace LibMS
             txtSearch1.Name = "txtSearch1";
             txtSearch1.Size = new Size(621, 30);
             txtSearch1.TabIndex = 1;
-            txtSearch1.Text = "Search books  by title or author...";
+            txtSearch1.PlaceholderText = "Search books  by title or author...";
+            txtSearch1.TextChanged += txtSearch1_TextChanged;
             // 
             // lblBookCat
             // 

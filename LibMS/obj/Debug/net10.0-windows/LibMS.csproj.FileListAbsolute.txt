@@ -120,3 +120,4 @@ C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\runtimes\win\lib\net
 C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\user\Desktop\LibMS\LibMS\obj\Debug\net10.0-windows\LibMS.Controls.BookCard.resources
