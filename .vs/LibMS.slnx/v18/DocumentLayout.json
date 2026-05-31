@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\bookcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,26 +82,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BookCard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.cs",
               "RelativeDocumentMoniker": "LibMS\\Controls\\BookCard.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.cs [Design]",
               "RelativeToolTip": "LibMS\\Controls\\BookCard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T15:48:53.728Z"
+              "WhenOpened": "2026-05-31T15:48:53.728Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BookCard.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.cs",
               "RelativeDocumentMoniker": "LibMS\\Controls\\BookCard.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.cs",
               "RelativeToolTip": "LibMS\\Controls\\BookCard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T14:24:38.486Z"
+              "WhenOpened": "2026-05-31T14:24:38.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,7 +115,8 @@
               "RelativeToolTip": "LibMS\\Controls\\BookCard.Designer.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAYwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T14:24:56.402Z"
+              "WhenOpened": "2026-05-31T14:24:56.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
