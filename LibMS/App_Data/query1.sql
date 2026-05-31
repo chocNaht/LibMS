@@ -5,3 +5,15 @@
 --(1004, 'Alejo', 'Angelika', 'alejo.390527@caloocan.sti.ph', 'kahitAnoNa', 'STUDENT'),
 --(1005, 'Lumabad', 'Shyroz', 'lumabad.421494@caloocan.sti.ph', 'lblyourHappiness', 'STUDENT'),
 --(1006, 'Ramos', 'Cresta Jane', 'ramos.472859@caloocan.sti.ph' , 'Celestina_0528', 'STUDENT');
+
+--INSERT INTO Books (BookID, Title, Author, Copyright, Publisher, Category, BookCover, NumOfCopies, AvailableCopies) VALUES
+--(1, 'Management Accounting for Decision Makers', 'Peter Atrill and Eddie McLaney', '2024-02-14', 'Pearson', 'Accountancy', 'C:\LibMS\image\Books\1.jpeg', 10, 10),
+--(2, 'Principles of Management', 'Stephen P. Robbins and Mary A. Coulter', '2002-12-18', 'Prentice Hall', 'Business Management', 'C:\LibMS\image\Books\2.jpeg', 10, 10),
+--(3, 'Vector Mechanics for Engineers: Statics and Dynamics', 'Ferdinand P. Beer and E. Russell Johnston', '1962-08-30', 'McGraw-Hill Book Company', 'Engineering', 'C:\LibMS\image\Books\3.jpeg', 10, 10),
+--(4, 'Entrepreneurship: Successfully Launching New Ventures', 'Bruce R. Barringer and R. Duane Ireland', '2025-09-05', 'Pearson', 'Entrepreneurship', 'C:\LibMS\image\Books\4.jpeg', 10, 10),
+--(5, 'To Kill a Mockingbird', 'Harper Lee', '1960-07-11', 'J. B. Lippincott & Co.', 'Fiction', 'C:\LibMS\image\Books\5.jpeg', 10, 10),
+--(6, 'University Finances: Accounting and Budgeting Principles for Higher Education', 'Dean O. Smith', '2019-11-23', 'Johns Hopkins University Press', 'General Education', 'C:\LibMS\image\Books\6.jpeg', 10, 10),
+--(7, 'Software Engineering (9th Edition)', 'Ian Sommerville', '2011-08-28', 'Pearson', 'Information Technology', 'C:\LibMS\image\Books\7.jpeg', 10, 10),
+--(8, 'Digital Arts: An Introduction to New Media', 'Catherine A. Hope and John Charles Ryan', '2014-04-01', 'Bloomsbury Publishing', 'Multimedia Arts', 'C:\LibMS\image\Books\8.jpeg', 10, 10),
+--(9, 'Psychology (Global Edition)', 'Saundra K. Ciccarelli and J. Noland White', '2014-02-18', 'Pearson', 'Psychology', 'C:\LibMS\image\Books\9.jpeg', 10, 10),
+--(10, 'Tourism Management (Seventh Edition)', 'Stephen J. Page', '2025-01-05', 'Routledge', 'Tourism', 'C:\LibMS\image\Books\10.jpeg', 10, 10);
