@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using LibMS.Models;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using LibMS.Models;
 
 namespace LibMS.Controls;
 
 public partial class BookCard : UserControl
 {
+    public event Action<Book>? BookSelected;
+
     private Book? _book;
 
     public BookCard()
@@ -22,6 +19,25 @@ public partial class BookCard : UserControl
     {
         InitializeComponent();
 
+        _book = book;
+
+        if (!string.IsNullOrWhiteSpace(book.BookCover))
+        {
+            string imagePath =
+                Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory,
+                    book.BookCover);
+
+            if (File.Exists(imagePath))
+            {
+                picCover.Image =
+                    Image.FromFile(imagePath);
+
+                picCover.SizeMode =
+                    PictureBoxSizeMode.Zoom;
+            }
+        }
+
         lblTitle.Text = book.Title;
         lblAuthor.Text = $"by {book.Author}";
         lblCategory.Text = $"Category: {book.Category}";
@@ -29,15 +45,26 @@ public partial class BookCard : UserControl
         lblCopyright.Text = $"Copyright: {book.Copyright.Year}";
 
         lblStatus.Text =
-            book.NumOfCopies > 0
+            book.AvailableCopies > 0
             ? "Available"
             : "Not Available";
 
         lblStatus.ForeColor =
-            book.NumOfCopies > 0
+            book.AvailableCopies > 0
             ? Color.LimeGreen
             : Color.Red;
 
-        lblCopies.Text = $"{book.AvailableCopies} of {book.NumOfCopies} copies";
+        lblCopies.Text =
+            $"{book.AvailableCopies} of {book.NumOfCopies} copies";
+    }
+
+    private void btnSelect_Click(
+        object sender,
+        EventArgs e)
+    {
+        if (_book != null)
+        {
+            BookSelected?.Invoke(_book);
+        }
     }
 }

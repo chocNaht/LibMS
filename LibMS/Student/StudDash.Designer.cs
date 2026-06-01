@@ -165,22 +165,22 @@ namespace LibMS
             btnBackCat2 = new Button();
             borrowPanel = new Panel();
             panel3 = new Panel();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
+            lblBorrowCopyright = new Label();
+            lblBorrowPublisher = new Label();
+            lblBorrowCopies = new Label();
+            lblBorrowCategory = new Label();
+            lblBorrowID = new Label();
+            lblBorrowAuthor = new Label();
+            lblBorrowTitle = new Label();
             panel4 = new Panel();
-            label10 = new Label();
-            label9 = new Label();
+            lblBorrowStatus = new Label();
             label8 = new Label();
-            btnBorBook = new Button();
-            txtPlanRetDate = new TextBox();
+            btnBorrowBook = new Button();
+            dtpReturnDate = new DateTimePicker();
             label7 = new Label();
-            txtBorDate = new TextBox();
+            dtpBorrowDate = new DateTimePicker();
             label6 = new Label();
-            pictureBox2 = new PictureBox();
+            picBorrowCover = new PictureBox();
             label5 = new Label();
             btnBackCat1 = new Button();
             reqSucPanel = new Panel();
@@ -193,6 +193,12 @@ namespace LibMS
             btnEdit2 = new Button();
             label46 = new Label();
             label47 = new Label();
+            lblRequestID = new Label();
+            lblReqBook = new Label();
+            lblReqAuthor = new Label();
+            lblReqBorrowDate = new Label();
+            lblReqReturnDate = new Label();
+            lblReqStatus = new Label();
             panelsidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -248,7 +254,7 @@ namespace LibMS
             borrowPanel.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBorrowCover).BeginInit();
             reqSucPanel.SuspendLayout();
             panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
@@ -269,15 +275,17 @@ namespace LibMS
             panelsidebar.Controls.Add(pictureBox1);
             panelsidebar.Dock = DockStyle.Left;
             panelsidebar.Location = new Point(0, 0);
+            panelsidebar.Margin = new Padding(4);
             panelsidebar.Name = "panelsidebar";
-            panelsidebar.Size = new Size(269, 586);
+            panelsidebar.Size = new Size(336, 732);
             panelsidebar.TabIndex = 0;
             // 
             // panel7
             // 
-            panel7.Location = new Point(269, 214);
+            panel7.Location = new Point(336, 268);
+            panel7.Margin = new Padding(4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(250, 125);
+            panel7.Size = new Size(312, 156);
             panel7.TabIndex = 14;
             // 
             // btnLogOut1
@@ -290,9 +298,10 @@ namespace LibMS
             btnLogOut1.ForeColor = Color.White;
             btnLogOut1.Image = Properties.Resources.exit__1_;
             btnLogOut1.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogOut1.Location = new Point(25, 516);
+            btnLogOut1.Location = new Point(31, 645);
+            btnLogOut1.Margin = new Padding(4);
             btnLogOut1.Name = "btnLogOut1";
-            btnLogOut1.Size = new Size(219, 36);
+            btnLogOut1.Size = new Size(274, 45);
             btnLogOut1.TabIndex = 5;
             btnLogOut1.Text = "Log Out";
             btnLogOut1.UseVisualStyleBackColor = false;
@@ -307,9 +316,10 @@ namespace LibMS
             btnStudActLog.ForeColor = Color.White;
             btnStudActLog.Image = Properties.Resources.log_file__1_;
             btnStudActLog.ImageAlign = ContentAlignment.MiddleLeft;
-            btnStudActLog.Location = new Point(25, 326);
+            btnStudActLog.Location = new Point(31, 408);
+            btnStudActLog.Margin = new Padding(4);
             btnStudActLog.Name = "btnStudActLog";
-            btnStudActLog.Size = new Size(219, 36);
+            btnStudActLog.Size = new Size(274, 45);
             btnStudActLog.TabIndex = 4;
             btnStudActLog.Text = "Activity Log";
             btnStudActLog.UseVisualStyleBackColor = true;
@@ -324,9 +334,10 @@ namespace LibMS
             btnStudBr.ForeColor = Color.White;
             btnStudBr.Image = Properties.Resources.book__1_;
             btnStudBr.ImageAlign = ContentAlignment.MiddleLeft;
-            btnStudBr.Location = new Point(25, 271);
+            btnStudBr.Location = new Point(31, 339);
+            btnStudBr.Margin = new Padding(4);
             btnStudBr.Name = "btnStudBr";
-            btnStudBr.Size = new Size(219, 36);
+            btnStudBr.Size = new Size(274, 45);
             btnStudBr.TabIndex = 3;
             btnStudBr.Text = "Book Requests";
             btnStudBr.UseVisualStyleBackColor = true;
@@ -341,9 +352,10 @@ namespace LibMS
             btnStudDash.ForeColor = Color.White;
             btnStudDash.Image = Properties.Resources.home__1_;
             btnStudDash.ImageAlign = ContentAlignment.MiddleLeft;
-            btnStudDash.Location = new Point(25, 214);
+            btnStudDash.Location = new Point(31, 268);
+            btnStudDash.Margin = new Padding(4);
             btnStudDash.Name = "btnStudDash";
-            btnStudDash.Size = new Size(219, 36);
+            btnStudDash.Size = new Size(274, 45);
             btnStudDash.TabIndex = 2;
             btnStudDash.Text = "Dashboard";
             btnStudDash.UseVisualStyleBackColor = true;
@@ -354,9 +366,10 @@ namespace LibMS
             panel1.BackColor = Color.DodgerBlue;
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(25, 107);
+            panel1.Location = new Point(31, 134);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(219, 65);
+            panel1.Size = new Size(274, 81);
             panel1.TabIndex = 1;
             // 
             // label2
@@ -364,9 +377,10 @@ namespace LibMS
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(16, 35);
+            label2.Location = new Point(20, 44);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(80, 23);
+            label2.Size = new Size(97, 30);
             label2.TabIndex = 1;
             label2.Text = "Student!";
             // 
@@ -375,9 +389,10 @@ namespace LibMS
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(16, 12);
+            label1.Location = new Point(20, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(84, 23);
+            label1.Size = new Size(104, 30);
             label1.TabIndex = 0;
             label1.Text = "Welcome,";
             // 
@@ -386,9 +401,10 @@ namespace LibMS
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources._98b1b7df_9c94_4010_8c3b_98c7af446ad2;
             pictureBox1.Image = Properties.Resources._693687151_1834705254581915_2090078077778080981_n;
-            pictureBox1.Location = new Point(25, -12);
+            pictureBox1.Location = new Point(31, -15);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(219, 165);
+            pictureBox1.Size = new Size(274, 206);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -407,8 +423,9 @@ namespace LibMS
             dashboardPanel.Controls.Add(txtSearch1);
             dashboardPanel.Controls.Add(lblBookCat);
             dashboardPanel.Location = new Point(0, 0);
+            dashboardPanel.Margin = new Padding(4);
             dashboardPanel.Name = "dashboardPanel";
-            dashboardPanel.Size = new Size(736, 586);
+            dashboardPanel.Size = new Size(920, 732);
             dashboardPanel.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -418,9 +435,10 @@ namespace LibMS
             flowLayoutPanel1.Controls.Add(panelFiction2);
             flowLayoutPanel1.Controls.Add(panelFiction3);
             flowLayoutPanel1.Controls.Add(panelScience1);
-            flowLayoutPanel1.Location = new Point(27, 229);
+            flowLayoutPanel1.Location = new Point(34, 286);
+            flowLayoutPanel1.Margin = new Padding(4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(706, 372);
+            flowLayoutPanel1.Size = new Size(882, 465);
             flowLayoutPanel1.TabIndex = 13;
             // 
             // panelFiction1
@@ -429,31 +447,27 @@ namespace LibMS
             panelFiction1.BorderStyle = BorderStyle.FixedSingle;
             panelFiction1.Controls.Add(btnSelect3);
             panelFiction1.Controls.Add(pictureBox5);
-            panelFiction1.Location = new Point(3, 3);
+            panelFiction1.Location = new Point(4, 4);
+            panelFiction1.Margin = new Padding(4);
             panelFiction1.Name = "panelFiction1";
-            panelFiction1.Size = new Size(322, 192);
+            panelFiction1.Size = new Size(402, 240);
             panelFiction1.TabIndex = 15;
             // 
             // btnSelect3
             // 
-            btnSelect3.BackColor = Color.Gold;
-            btnSelect3.FlatAppearance.BorderSize = 0;
-            btnSelect3.FlatStyle = FlatStyle.Flat;
-            btnSelect3.ForeColor = Color.Blue;
-            btnSelect3.Location = new Point(22, 139);
+            btnSelect3.Location = new Point(0, 0);
+            btnSelect3.Margin = new Padding(4);
             btnSelect3.Name = "btnSelect3";
-            btnSelect3.Size = new Size(281, 29);
-            btnSelect3.TabIndex = 2;
-            btnSelect3.Text = "Select";
-            btnSelect3.UseVisualStyleBackColor = false;
-            btnSelect3.Click += button6_Click;
+            btnSelect3.Size = new Size(94, 29);
+            btnSelect3.TabIndex = 0;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Screenshot_2026_05_22_033822;
-            pictureBox5.Location = new Point(22, 3);
+            pictureBox5.Location = new Point(28, 4);
+            pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(281, 130);
+            pictureBox5.Size = new Size(351, 162);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 1;
             pictureBox5.TabStop = false;
@@ -464,31 +478,27 @@ namespace LibMS
             panelFiction2.BorderStyle = BorderStyle.FixedSingle;
             panelFiction2.Controls.Add(btnSelect2);
             panelFiction2.Controls.Add(pictureBox4);
-            panelFiction2.Location = new Point(331, 3);
+            panelFiction2.Location = new Point(414, 4);
+            panelFiction2.Margin = new Padding(4);
             panelFiction2.Name = "panelFiction2";
-            panelFiction2.Size = new Size(322, 192);
+            panelFiction2.Size = new Size(402, 240);
             panelFiction2.TabIndex = 14;
             // 
             // btnSelect2
             // 
-            btnSelect2.BackColor = Color.Gold;
-            btnSelect2.FlatAppearance.BorderSize = 0;
-            btnSelect2.FlatStyle = FlatStyle.Flat;
-            btnSelect2.ForeColor = Color.Blue;
-            btnSelect2.Location = new Point(21, 139);
+            btnSelect2.Location = new Point(0, 0);
+            btnSelect2.Margin = new Padding(4);
             btnSelect2.Name = "btnSelect2";
-            btnSelect2.Size = new Size(281, 29);
-            btnSelect2.TabIndex = 2;
-            btnSelect2.Text = "Select";
-            btnSelect2.UseVisualStyleBackColor = false;
-            btnSelect2.Click += btnSelect2_Click;
+            btnSelect2.Size = new Size(94, 29);
+            btnSelect2.TabIndex = 0;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Screenshot_2026_05_22_033002;
-            pictureBox4.Location = new Point(21, 3);
+            pictureBox4.Location = new Point(26, 4);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(281, 130);
+            pictureBox4.Size = new Size(351, 162);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
@@ -499,31 +509,27 @@ namespace LibMS
             panelFiction3.BorderStyle = BorderStyle.FixedSingle;
             panelFiction3.Controls.Add(btnSelect1);
             panelFiction3.Controls.Add(pictureBox3);
-            panelFiction3.Location = new Point(3, 201);
+            panelFiction3.Location = new Point(4, 252);
+            panelFiction3.Margin = new Padding(4);
             panelFiction3.Name = "panelFiction3";
-            panelFiction3.Size = new Size(322, 192);
+            panelFiction3.Size = new Size(402, 240);
             panelFiction3.TabIndex = 13;
             // 
             // btnSelect1
             // 
-            btnSelect1.BackColor = Color.Gold;
-            btnSelect1.FlatAppearance.BorderSize = 0;
-            btnSelect1.FlatStyle = FlatStyle.Flat;
-            btnSelect1.ForeColor = Color.Blue;
-            btnSelect1.Location = new Point(22, 139);
+            btnSelect1.Location = new Point(0, 0);
+            btnSelect1.Margin = new Padding(4);
             btnSelect1.Name = "btnSelect1";
-            btnSelect1.Size = new Size(281, 29);
-            btnSelect1.TabIndex = 1;
-            btnSelect1.Text = "Select";
-            btnSelect1.UseVisualStyleBackColor = false;
-            btnSelect1.Click += btnSelect1_Click;
+            btnSelect1.Size = new Size(94, 29);
+            btnSelect1.TabIndex = 0;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Screenshot_2026_05_22_032008;
-            pictureBox3.Location = new Point(22, 3);
+            pictureBox3.Location = new Point(28, 4);
+            pictureBox3.Margin = new Padding(4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(281, 130);
+            pictureBox3.Size = new Size(351, 162);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
@@ -534,42 +540,39 @@ namespace LibMS
             panelScience1.BorderStyle = BorderStyle.FixedSingle;
             panelScience1.Controls.Add(pictureBox6);
             panelScience1.Controls.Add(btnSelect4);
-            panelScience1.Location = new Point(331, 201);
+            panelScience1.Location = new Point(414, 252);
+            panelScience1.Margin = new Padding(4);
             panelScience1.Name = "panelScience1";
-            panelScience1.Size = new Size(322, 192);
+            panelScience1.Size = new Size(402, 240);
             panelScience1.TabIndex = 16;
             // 
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.Screenshot_2026_05_22_034053;
-            pictureBox6.Location = new Point(21, 3);
+            pictureBox6.Location = new Point(26, 4);
+            pictureBox6.Margin = new Padding(4);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(281, 130);
+            pictureBox6.Size = new Size(351, 162);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 3;
             pictureBox6.TabStop = false;
             // 
             // btnSelect4
             // 
-            btnSelect4.BackColor = Color.Gold;
-            btnSelect4.FlatAppearance.BorderSize = 0;
-            btnSelect4.FlatStyle = FlatStyle.Flat;
-            btnSelect4.ForeColor = Color.Blue;
-            btnSelect4.Location = new Point(21, 139);
+            btnSelect4.Location = new Point(0, 0);
+            btnSelect4.Margin = new Padding(4);
             btnSelect4.Name = "btnSelect4";
-            btnSelect4.Size = new Size(281, 29);
-            btnSelect4.TabIndex = 2;
-            btnSelect4.Text = "Select";
-            btnSelect4.UseVisualStyleBackColor = false;
-            btnSelect4.Click += btnSelect4_Click;
+            btnSelect4.Size = new Size(94, 29);
+            btnSelect4.TabIndex = 4;
             // 
             // lblNoMatch
             // 
             lblNoMatch.AutoSize = true;
             lblNoMatch.Font = new Font("Segoe UI", 7F);
-            lblNoMatch.Location = new Point(256, 208);
+            lblNoMatch.Location = new Point(320, 260);
+            lblNoMatch.Margin = new Padding(4, 0, 4, 0);
             lblNoMatch.Name = "lblNoMatch";
-            lblNoMatch.Size = new Size(149, 15);
+            lblNoMatch.Size = new Size(173, 19);
             lblNoMatch.TabIndex = 15;
             lblNoMatch.Text = "NO CONTENTS AVAILABLE";
             lblNoMatch.Visible = false;
@@ -581,9 +584,10 @@ namespace LibMS
             btnCaps.FlatStyle = FlatStyle.Flat;
             btnCaps.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCaps.ForeColor = Color.Blue;
-            btnCaps.Location = new Point(431, 176);
+            btnCaps.Location = new Point(539, 220);
+            btnCaps.Margin = new Padding(4);
             btnCaps.Name = "btnCaps";
-            btnCaps.Size = new Size(94, 29);
+            btnCaps.Size = new Size(118, 36);
             btnCaps.TabIndex = 8;
             btnCaps.Text = "CAPSTONE";
             btnCaps.UseVisualStyleBackColor = false;
@@ -596,9 +600,10 @@ namespace LibMS
             btnHis.FlatStyle = FlatStyle.Flat;
             btnHis.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnHis.ForeColor = Color.Blue;
-            btnHis.Location = new Point(331, 176);
+            btnHis.Location = new Point(414, 220);
+            btnHis.Margin = new Padding(4);
             btnHis.Name = "btnHis";
-            btnHis.Size = new Size(94, 29);
+            btnHis.Size = new Size(118, 36);
             btnHis.TabIndex = 7;
             btnHis.Text = "HISTORY";
             btnHis.UseVisualStyleBackColor = false;
@@ -611,9 +616,10 @@ namespace LibMS
             btnSci.FlatStyle = FlatStyle.Flat;
             btnSci.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSci.ForeColor = Color.Blue;
-            btnSci.Location = new Point(231, 176);
+            btnSci.Location = new Point(289, 220);
+            btnSci.Margin = new Padding(4);
             btnSci.Name = "btnSci";
-            btnSci.Size = new Size(94, 29);
+            btnSci.Size = new Size(118, 36);
             btnSci.TabIndex = 6;
             btnSci.Text = "SCIENCE";
             btnSci.UseVisualStyleBackColor = false;
@@ -626,9 +632,10 @@ namespace LibMS
             btnFic.FlatStyle = FlatStyle.Flat;
             btnFic.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFic.ForeColor = Color.Blue;
-            btnFic.Location = new Point(131, 176);
+            btnFic.Location = new Point(164, 220);
+            btnFic.Margin = new Padding(4);
             btnFic.Name = "btnFic";
-            btnFic.Size = new Size(94, 29);
+            btnFic.Size = new Size(118, 36);
             btnFic.TabIndex = 5;
             btnFic.Text = "FICTION";
             btnFic.UseVisualStyleBackColor = false;
@@ -641,9 +648,10 @@ namespace LibMS
             btnAll.FlatStyle = FlatStyle.Flat;
             btnAll.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAll.ForeColor = Color.Blue;
-            btnAll.Location = new Point(31, 176);
+            btnAll.Location = new Point(39, 220);
+            btnAll.Margin = new Padding(4);
             btnAll.Name = "btnAll";
-            btnAll.Size = new Size(94, 29);
+            btnAll.Size = new Size(118, 36);
             btnAll.TabIndex = 4;
             btnAll.Text = "ALL";
             btnAll.UseVisualStyleBackColor = false;
@@ -654,18 +662,20 @@ namespace LibMS
             lblCat.AutoSize = true;
             lblCat.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCat.ForeColor = Color.RoyalBlue;
-            lblCat.Location = new Point(27, 135);
+            lblCat.Location = new Point(34, 169);
+            lblCat.Margin = new Padding(4, 0, 4, 0);
             lblCat.Name = "lblCat";
-            lblCat.Size = new Size(127, 31);
+            lblCat.Size = new Size(155, 38);
             lblCat.TabIndex = 3;
             lblCat.Text = "Categories";
             // 
             // pBSearch
             // 
             pBSearch.Image = Properties.Resources.search;
-            pBSearch.Location = new Point(42, 83);
+            pBSearch.Location = new Point(52, 104);
+            pBSearch.Margin = new Padding(4);
             pBSearch.Name = "pBSearch";
-            pBSearch.Size = new Size(33, 30);
+            pBSearch.Size = new Size(41, 38);
             pBSearch.SizeMode = PictureBoxSizeMode.Zoom;
             pBSearch.TabIndex = 2;
             pBSearch.TabStop = false;
@@ -673,11 +683,12 @@ namespace LibMS
             // txtSearch1
             // 
             txtSearch1.Font = new Font("Segoe UI", 10F);
-            txtSearch1.Location = new Point(81, 83);
+            txtSearch1.Location = new Point(101, 104);
+            txtSearch1.Margin = new Padding(4);
             txtSearch1.Name = "txtSearch1";
-            txtSearch1.Size = new Size(621, 30);
-            txtSearch1.TabIndex = 1;
             txtSearch1.PlaceholderText = "Search books  by title or author...";
+            txtSearch1.Size = new Size(775, 34);
+            txtSearch1.TabIndex = 1;
             txtSearch1.TextChanged += txtSearch1_TextChanged;
             // 
             // lblBookCat
@@ -685,9 +696,10 @@ namespace LibMS
             lblBookCat.AutoSize = true;
             lblBookCat.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblBookCat.ForeColor = Color.RoyalBlue;
-            lblBookCat.Location = new Point(27, 32);
+            lblBookCat.Location = new Point(34, 40);
+            lblBookCat.Margin = new Padding(4, 0, 4, 0);
             lblBookCat.Name = "lblBookCat";
-            lblBookCat.Size = new Size(158, 31);
+            lblBookCat.Size = new Size(193, 38);
             lblBookCat.TabIndex = 0;
             lblBookCat.Text = "Book Catalog";
             // 
@@ -698,8 +710,9 @@ namespace LibMS
             brpanel.Controls.Add(lblBr);
             brpanel.Dock = DockStyle.Fill;
             brpanel.Location = new Point(0, 0);
+            brpanel.Margin = new Padding(4);
             brpanel.Name = "brpanel";
-            brpanel.Size = new Size(736, 586);
+            brpanel.Size = new Size(920, 732);
             brpanel.TabIndex = 16;
             brpanel.Visible = false;
             // 
@@ -708,9 +721,10 @@ namespace LibMS
             detBPanel.BackColor = Color.White;
             detBPanel.Controls.Add(btnDelete1);
             detBPanel.Controls.Add(btnEdit1);
-            detBPanel.Location = new Point(31, 98);
+            detBPanel.Location = new Point(39, 122);
+            detBPanel.Margin = new Padding(4);
             detBPanel.Name = "detBPanel";
-            detBPanel.Size = new Size(671, 110);
+            detBPanel.Size = new Size(839, 138);
             detBPanel.TabIndex = 2;
             // 
             // btnDelete1
@@ -719,9 +733,10 @@ namespace LibMS
             btnDelete1.FlatAppearance.BorderSize = 0;
             btnDelete1.FlatStyle = FlatStyle.Flat;
             btnDelete1.Image = Properties.Resources.x;
-            btnDelete1.Location = new Point(607, 32);
+            btnDelete1.Location = new Point(759, 40);
+            btnDelete1.Margin = new Padding(4);
             btnDelete1.Name = "btnDelete1";
-            btnDelete1.Size = new Size(42, 36);
+            btnDelete1.Size = new Size(52, 45);
             btnDelete1.TabIndex = 1;
             btnDelete1.UseVisualStyleBackColor = false;
             btnDelete1.Click += btnDelete1_Click;
@@ -732,9 +747,10 @@ namespace LibMS
             btnEdit1.FlatAppearance.BorderSize = 0;
             btnEdit1.FlatStyle = FlatStyle.Flat;
             btnEdit1.Image = Properties.Resources.edit__1_1;
-            btnEdit1.Location = new Point(559, 31);
+            btnEdit1.Location = new Point(699, 39);
+            btnEdit1.Margin = new Padding(4);
             btnEdit1.Name = "btnEdit1";
-            btnEdit1.Size = new Size(42, 36);
+            btnEdit1.Size = new Size(52, 45);
             btnEdit1.TabIndex = 0;
             btnEdit1.UseVisualStyleBackColor = false;
             btnEdit1.Click += btnEdit1_Click;
@@ -742,9 +758,10 @@ namespace LibMS
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(31, 63);
+            label3.Location = new Point(39, 79);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(341, 20);
+            label3.Size = new Size(413, 25);
             label3.TabIndex = 1;
             label3.Text = "View and edit your pending book borrow requests";
             // 
@@ -753,9 +770,10 @@ namespace LibMS
             lblBr.AutoSize = true;
             lblBr.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblBr.ForeColor = Color.RoyalBlue;
-            lblBr.Location = new Point(27, 32);
+            lblBr.Location = new Point(34, 40);
+            lblBr.Margin = new Padding(4, 0, 4, 0);
             lblBr.Name = "lblBr";
-            lblBr.Size = new Size(171, 31);
+            lblBr.Size = new Size(209, 38);
             lblBr.TabIndex = 0;
             lblBr.Text = "Book Requests";
             // 
@@ -768,8 +786,9 @@ namespace LibMS
             brEditPanel.Controls.Add(label41);
             brEditPanel.Dock = DockStyle.Fill;
             brEditPanel.Location = new Point(0, 0);
+            brEditPanel.Margin = new Padding(4);
             brEditPanel.Name = "brEditPanel";
-            brEditPanel.Size = new Size(736, 586);
+            brEditPanel.Size = new Size(920, 732);
             brEditPanel.TabIndex = 20;
             brEditPanel.Visible = false;
             // 
@@ -782,9 +801,10 @@ namespace LibMS
             btnBack4.ForeColor = Color.RoyalBlue;
             btnBack4.Image = Properties.Resources.log_out__1_2;
             btnBack4.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBack4.Location = new Point(30, 23);
+            btnBack4.Location = new Point(38, 29);
+            btnBack4.Margin = new Padding(4);
             btnBack4.Name = "btnBack4";
-            btnBack4.Size = new Size(190, 29);
+            btnBack4.Size = new Size(238, 36);
             btnBack4.TabIndex = 5;
             btnBack4.Text = "Back                        ";
             btnBack4.UseVisualStyleBackColor = false;
@@ -803,9 +823,10 @@ namespace LibMS
             editReqPanel.Controls.Add(label43);
             editReqPanel.Controls.Add(label42);
             editReqPanel.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            editReqPanel.Location = new Point(31, 120);
+            editReqPanel.Location = new Point(39, 150);
+            editReqPanel.Margin = new Padding(4);
             editReqPanel.Name = "editReqPanel";
-            editReqPanel.Size = new Size(671, 256);
+            editReqPanel.Size = new Size(839, 320);
             editReqPanel.TabIndex = 3;
             // 
             // btnCan1
@@ -814,13 +835,13 @@ namespace LibMS
             btnCan1.FlatAppearance.BorderSize = 0;
             btnCan1.FlatStyle = FlatStyle.Flat;
             btnCan1.Font = new Font("Segoe UI Semibold", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCan1.Location = new Point(149, 210);
+            btnCan1.Location = new Point(186, 262);
+            btnCan1.Margin = new Padding(4);
             btnCan1.Name = "btnCan1";
-            btnCan1.Size = new Size(70, 24);
+            btnCan1.Size = new Size(88, 30);
             btnCan1.TabIndex = 8;
             btnCan1.Text = "Cancel";
             btnCan1.UseVisualStyleBackColor = false;
-            btnCan1.Click += btnCan1_Click;
             // 
             // btnUpdReq1
             // 
@@ -828,9 +849,10 @@ namespace LibMS
             btnUpdReq1.FlatAppearance.BorderSize = 0;
             btnUpdReq1.FlatStyle = FlatStyle.Flat;
             btnUpdReq1.Font = new Font("Segoe UI Semibold", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnUpdReq1.Location = new Point(17, 209);
+            btnUpdReq1.Location = new Point(21, 261);
+            btnUpdReq1.Margin = new Padding(4);
             btnUpdReq1.Name = "btnUpdReq1";
-            btnUpdReq1.Size = new Size(125, 24);
+            btnUpdReq1.Size = new Size(156, 30);
             btnUpdReq1.TabIndex = 7;
             btnUpdReq1.Text = "Update Request ";
             btnUpdReq1.UseVisualStyleBackColor = false;
@@ -838,9 +860,10 @@ namespace LibMS
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(17, 165);
+            textBox2.Location = new Point(21, 206);
+            textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(632, 25);
+            textBox2.Size = new Size(789, 28);
             textBox2.TabIndex = 6;
             // 
             // label45
@@ -848,17 +871,19 @@ namespace LibMS
             label45.AutoSize = true;
             label45.Font = new Font("Segoe UI Semibold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label45.ForeColor = Color.RoyalBlue;
-            label45.Location = new Point(17, 147);
+            label45.Location = new Point(21, 184);
+            label45.Margin = new Padding(4, 0, 4, 0);
             label45.Name = "label45";
-            label45.Size = new Size(69, 15);
+            label45.Size = new Size(82, 19);
             label45.TabIndex = 5;
             label45.Text = "Select Book";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(17, 117);
+            textBox1.Location = new Point(21, 146);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(632, 25);
+            textBox1.Size = new Size(789, 28);
             textBox1.TabIndex = 4;
             // 
             // label44
@@ -866,18 +891,20 @@ namespace LibMS
             label44.AutoSize = true;
             label44.Font = new Font("Segoe UI Semibold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label44.ForeColor = Color.RoyalBlue;
-            label44.Location = new Point(17, 98);
+            label44.Location = new Point(21, 122);
+            label44.Margin = new Padding(4, 0, 4, 0);
             label44.Name = "label44";
-            label44.Size = new Size(69, 15);
+            label44.Size = new Size(82, 19);
             label44.TabIndex = 3;
             label44.Text = "Select Book";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(17, 67);
+            comboBox1.Location = new Point(21, 84);
+            comboBox1.Margin = new Padding(4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(632, 25);
+            comboBox1.Size = new Size(789, 29);
             comboBox1.TabIndex = 2;
             // 
             // label43
@@ -885,9 +912,10 @@ namespace LibMS
             label43.AutoSize = true;
             label43.Font = new Font("Segoe UI Semibold", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label43.ForeColor = Color.RoyalBlue;
-            label43.Location = new Point(17, 49);
+            label43.Location = new Point(21, 61);
+            label43.Margin = new Padding(4, 0, 4, 0);
             label43.Name = "label43";
-            label43.Size = new Size(69, 15);
+            label43.Size = new Size(82, 19);
             label43.TabIndex = 1;
             label43.Text = "Select Book";
             // 
@@ -896,9 +924,10 @@ namespace LibMS
             label42.AutoSize = true;
             label42.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label42.ForeColor = Color.MediumBlue;
-            label42.Location = new Point(17, 15);
+            label42.Location = new Point(21, 19);
+            label42.Margin = new Padding(4, 0, 4, 0);
             label42.Name = "label42";
-            label42.Size = new Size(157, 23);
+            label42.Size = new Size(192, 30);
             label42.TabIndex = 0;
             label42.Text = "Edit Book Request";
             // 
@@ -906,9 +935,10 @@ namespace LibMS
             // 
             origBookPanel.BackColor = Color.White;
             origBookPanel.Controls.Add(btnDelete2);
-            origBookPanel.Location = new Point(31, 388);
+            origBookPanel.Location = new Point(39, 485);
+            origBookPanel.Margin = new Padding(4);
             origBookPanel.Name = "origBookPanel";
-            origBookPanel.Size = new Size(671, 104);
+            origBookPanel.Size = new Size(839, 130);
             origBookPanel.TabIndex = 2;
             // 
             // btnDelete2
@@ -917,9 +947,10 @@ namespace LibMS
             btnDelete2.FlatAppearance.BorderSize = 0;
             btnDelete2.FlatStyle = FlatStyle.Flat;
             btnDelete2.Image = Properties.Resources.x;
-            btnDelete2.Location = new Point(607, 32);
+            btnDelete2.Location = new Point(759, 40);
+            btnDelete2.Margin = new Padding(4);
             btnDelete2.Name = "btnDelete2";
-            btnDelete2.Size = new Size(42, 36);
+            btnDelete2.Size = new Size(52, 45);
             btnDelete2.TabIndex = 1;
             btnDelete2.UseVisualStyleBackColor = false;
             btnDelete2.Click += btnDelete2_Click;
@@ -927,9 +958,10 @@ namespace LibMS
             // label38
             // 
             label38.AutoSize = true;
-            label38.Location = new Point(32, 91);
+            label38.Location = new Point(40, 114);
+            label38.Margin = new Padding(4, 0, 4, 0);
             label38.Name = "label38";
-            label38.Size = new Size(341, 20);
+            label38.Size = new Size(413, 25);
             label38.TabIndex = 1;
             label38.Text = "View and edit your pending book borrow requests";
             // 
@@ -938,9 +970,10 @@ namespace LibMS
             label41.AutoSize = true;
             label41.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label41.ForeColor = Color.RoyalBlue;
-            label41.Location = new Point(32, 55);
+            label41.Location = new Point(40, 69);
+            label41.Margin = new Padding(4, 0, 4, 0);
             label41.Name = "label41";
-            label41.Size = new Size(171, 31);
+            label41.Size = new Size(209, 38);
             label41.TabIndex = 0;
             label41.Text = "Book Requests";
             // 
@@ -950,8 +983,9 @@ namespace LibMS
             bookDetPanel.Controls.Add(panel11);
             bookDetPanel.Dock = DockStyle.Fill;
             bookDetPanel.Location = new Point(0, 0);
+            bookDetPanel.Margin = new Padding(4);
             bookDetPanel.Name = "bookDetPanel";
-            bookDetPanel.Size = new Size(736, 586);
+            bookDetPanel.Size = new Size(920, 732);
             bookDetPanel.TabIndex = 19;
             bookDetPanel.Visible = false;
             // 
@@ -964,9 +998,10 @@ namespace LibMS
             btnBackCat3.ForeColor = Color.RoyalBlue;
             btnBackCat3.Image = Properties.Resources.log_out__1_2;
             btnBackCat3.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBackCat3.Location = new Point(27, 12);
+            btnBackCat3.Location = new Point(34, 15);
+            btnBackCat3.Margin = new Padding(4);
             btnBackCat3.Name = "btnBackCat3";
-            btnBackCat3.Size = new Size(190, 29);
+            btnBackCat3.Size = new Size(238, 36);
             btnBackCat3.TabIndex = 1;
             btnBackCat3.Text = "Back                        ";
             btnBackCat3.UseVisualStyleBackColor = false;
@@ -986,9 +1021,10 @@ namespace LibMS
             panel11.Controls.Add(panel12);
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(label39);
-            panel11.Location = new Point(71, 66);
+            panel11.Location = new Point(89, 82);
+            panel11.Margin = new Padding(4);
             panel11.Name = "panel11";
-            panel11.Size = new Size(609, 393);
+            panel11.Size = new Size(761, 491);
             panel11.TabIndex = 0;
             // 
             // panel13
@@ -997,9 +1033,10 @@ namespace LibMS
             panel13.BorderStyle = BorderStyle.FixedSingle;
             panel13.Controls.Add(label37);
             panel13.Controls.Add(label40);
-            panel13.Location = new Point(22, 322);
+            panel13.Location = new Point(28, 402);
+            panel13.Margin = new Padding(4);
             panel13.Name = "panel13";
-            panel13.Size = new Size(558, 42);
+            panel13.Size = new Size(697, 52);
             panel13.TabIndex = 14;
             // 
             // label37
@@ -1007,9 +1044,10 @@ namespace LibMS
             label37.AutoSize = true;
             label37.Font = new Font("Segoe UI", 7F);
             label37.ForeColor = Color.Gray;
-            label37.Location = new Point(475, 50);
+            label37.Location = new Point(594, 62);
+            label37.Margin = new Padding(4, 0, 4, 0);
             label37.Name = "label37";
-            label37.Size = new Size(73, 15);
+            label37.Size = new Size(87, 19);
             label37.TabIndex = 2;
             label37.Text = "3 of 5 copies";
             // 
@@ -1018,9 +1056,10 @@ namespace LibMS
             label40.AutoSize = true;
             label40.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label40.ForeColor = Color.Crimson;
-            label40.Location = new Point(151, 9);
+            label40.Location = new Point(189, 11);
+            label40.Margin = new Padding(4, 0, 4, 0);
             label40.Name = "label40";
-            label40.Size = new Size(167, 19);
+            label40.Size = new Size(194, 21);
             label40.TabIndex = 0;
             label40.Text = "Estimated Available Date:";
             // 
@@ -1029,9 +1068,10 @@ namespace LibMS
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label27.ForeColor = Color.RoyalBlue;
-            label27.Location = new Point(243, 191);
+            label27.Location = new Point(304, 239);
+            label27.Margin = new Padding(4, 0, 4, 0);
             label27.Name = "label27";
-            label27.Size = new Size(71, 17);
+            label27.Size = new Size(81, 20);
             label27.TabIndex = 13;
             label27.Text = "Copyright:";
             // 
@@ -1040,9 +1080,10 @@ namespace LibMS
             label29.AutoSize = true;
             label29.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label29.ForeColor = Color.RoyalBlue;
-            label29.Location = new Point(243, 165);
+            label29.Location = new Point(304, 206);
+            label29.Margin = new Padding(4, 0, 4, 0);
             label29.Name = "label29";
-            label29.Size = new Size(68, 17);
+            label29.Size = new Size(78, 20);
             label29.TabIndex = 12;
             label29.Text = "Publisher:";
             // 
@@ -1051,9 +1092,10 @@ namespace LibMS
             label30.AutoSize = true;
             label30.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label30.ForeColor = Color.RoyalBlue;
-            label30.Location = new Point(243, 141);
+            label30.Location = new Point(304, 176);
+            label30.Margin = new Padding(4, 0, 4, 0);
             label30.Name = "label30";
-            label30.Size = new Size(67, 17);
+            label30.Size = new Size(76, 20);
             label30.TabIndex = 11;
             label30.Text = "Category:";
             // 
@@ -1062,9 +1104,10 @@ namespace LibMS
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label31.ForeColor = Color.RoyalBlue;
-            label31.Location = new Point(243, 115);
+            label31.Location = new Point(304, 144);
+            label31.Margin = new Padding(4, 0, 4, 0);
             label31.Name = "label31";
-            label31.Size = new Size(59, 17);
+            label31.Size = new Size(67, 20);
             label31.TabIndex = 10;
             label31.Text = "Book ID:";
             // 
@@ -1073,9 +1116,10 @@ namespace LibMS
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 6F);
             label32.ForeColor = Color.Gray;
-            label32.Location = new Point(243, 95);
+            label32.Location = new Point(304, 119);
+            label32.Margin = new Padding(4, 0, 4, 0);
             label32.Name = "label32";
-            label32.Size = new Size(41, 12);
+            label32.Size = new Size(52, 15);
             label32.TabIndex = 9;
             label32.Text = "(Author)";
             // 
@@ -1084,9 +1128,10 @@ namespace LibMS
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label33.ForeColor = Color.RoyalBlue;
-            label33.Location = new Point(239, 61);
+            label33.Location = new Point(299, 76);
+            label33.Margin = new Padding(4, 0, 4, 0);
             label33.Name = "label33";
-            label33.Size = new Size(61, 25);
+            label33.Size = new Size(71, 30);
             label33.TabIndex = 8;
             label33.Text = "(Title)";
             // 
@@ -1097,9 +1142,10 @@ namespace LibMS
             panel12.Controls.Add(label34);
             panel12.Controls.Add(label35);
             panel12.Controls.Add(label36);
-            panel12.Location = new Point(22, 234);
+            panel12.Location = new Point(28, 292);
+            panel12.Margin = new Padding(4);
             panel12.Name = "panel12";
-            panel12.Size = new Size(558, 73);
+            panel12.Size = new Size(697, 91);
             panel12.TabIndex = 7;
             // 
             // label34
@@ -1107,9 +1153,10 @@ namespace LibMS
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 7F);
             label34.ForeColor = Color.Gray;
-            label34.Location = new Point(475, 50);
+            label34.Location = new Point(594, 62);
+            label34.Margin = new Padding(4, 0, 4, 0);
             label34.Name = "label34";
-            label34.Size = new Size(73, 15);
+            label34.Size = new Size(87, 19);
             label34.TabIndex = 2;
             label34.Text = "3 of 5 copies";
             // 
@@ -1118,9 +1165,10 @@ namespace LibMS
             label35.AutoSize = true;
             label35.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label35.ForeColor = Color.Crimson;
-            label35.Location = new Point(13, 29);
+            label35.Location = new Point(16, 36);
+            label35.Margin = new Padding(4, 0, 4, 0);
             label35.Name = "label35";
-            label35.Size = new Size(163, 28);
+            label35.Size = new Size(197, 32);
             label35.TabIndex = 1;
             label35.Text = "NOT AVAILABLE";
             // 
@@ -1129,17 +1177,19 @@ namespace LibMS
             label36.AutoSize = true;
             label36.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label36.ForeColor = Color.RoyalBlue;
-            label36.Location = new Point(13, 10);
+            label36.Location = new Point(16, 12);
+            label36.Margin = new Padding(4, 0, 4, 0);
             label36.Name = "label36";
-            label36.Size = new Size(109, 19);
+            label36.Size = new Size(125, 21);
             label36.TabIndex = 0;
             label36.Text = "Available Status";
             // 
             // pictureBox9
             // 
-            pictureBox9.Location = new Point(22, 19);
+            pictureBox9.Location = new Point(28, 24);
+            pictureBox9.Margin = new Padding(4);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(201, 202);
+            pictureBox9.Size = new Size(251, 252);
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
             // 
@@ -1148,9 +1198,10 @@ namespace LibMS
             label39.AutoSize = true;
             label39.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label39.ForeColor = Color.RoyalBlue;
-            label39.Location = new Point(229, 19);
+            label39.Location = new Point(286, 24);
+            label39.Margin = new Padding(4, 0, 4, 0);
             label39.Name = "label39";
-            label39.Size = new Size(183, 38);
+            label39.Size = new Size(214, 45);
             label39.TabIndex = 0;
             label39.Text = "Book Details";
             // 
@@ -1165,8 +1216,9 @@ namespace LibMS
             alpanel.Controls.Add(label4);
             alpanel.Dock = DockStyle.Fill;
             alpanel.Location = new Point(0, 0);
+            alpanel.Margin = new Padding(4);
             alpanel.Name = "alpanel";
-            alpanel.Size = new Size(736, 586);
+            alpanel.Size = new Size(920, 732);
             alpanel.TabIndex = 4;
             alpanel.Visible = false;
             // 
@@ -1176,17 +1228,19 @@ namespace LibMS
             panel20.BorderStyle = BorderStyle.FixedSingle;
             panel20.Controls.Add(pictureBox12);
             panel20.Controls.Add(label57);
-            panel20.Location = new Point(370, 86);
+            panel20.Location = new Point(462, 108);
+            panel20.Margin = new Padding(4);
             panel20.Name = "panel20";
-            panel20.Size = new Size(331, 70);
+            panel20.Size = new Size(413, 87);
             panel20.TabIndex = 9;
             // 
             // pictureBox12
             // 
             pictureBox12.Image = Properties.Resources.circle__1_;
-            pictureBox12.Location = new Point(294, 9);
+            pictureBox12.Location = new Point(368, 11);
+            pictureBox12.Margin = new Padding(4);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(31, 27);
+            pictureBox12.Size = new Size(39, 34);
             pictureBox12.TabIndex = 1;
             pictureBox12.TabStop = false;
             // 
@@ -1194,9 +1248,10 @@ namespace LibMS
             // 
             label57.AutoSize = true;
             label57.ForeColor = Color.RoyalBlue;
-            label57.Location = new Point(6, 7);
+            label57.Location = new Point(8, 9);
+            label57.Margin = new Padding(4, 0, 4, 0);
             label57.Name = "label57";
-            label57.Size = new Size(113, 20);
+            label57.Size = new Size(137, 25);
             label57.TabIndex = 0;
             label57.Text = "Returned Books";
             // 
@@ -1206,17 +1261,19 @@ namespace LibMS
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(pictureBox11);
             panel2.Controls.Add(label53);
-            panel2.Location = new Point(26, 86);
+            panel2.Location = new Point(32, 108);
+            panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(331, 70);
+            panel2.Size = new Size(413, 87);
             panel2.TabIndex = 8;
             // 
             // pictureBox11
             // 
             pictureBox11.Image = Properties.Resources.book__1_;
-            pictureBox11.Location = new Point(294, 9);
+            pictureBox11.Location = new Point(368, 11);
+            pictureBox11.Margin = new Padding(4);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(31, 27);
+            pictureBox11.Size = new Size(39, 34);
             pictureBox11.TabIndex = 1;
             pictureBox11.TabStop = false;
             // 
@@ -1224,18 +1281,20 @@ namespace LibMS
             // 
             label53.AutoSize = true;
             label53.ForeColor = Color.RoyalBlue;
-            label53.Location = new Point(6, 7);
+            label53.Location = new Point(8, 9);
+            label53.Margin = new Padding(4, 0, 4, 0);
             label53.Name = "label53";
-            label53.Size = new Size(118, 20);
+            label53.Size = new Size(143, 25);
             label53.TabIndex = 0;
             label53.Text = "Borrowed Books";
             // 
             // panel18
             // 
             panel18.Controls.Add(flowLayoutPanel2);
-            panel18.Location = new Point(27, 222);
+            panel18.Location = new Point(34, 278);
+            panel18.Margin = new Padding(4);
             panel18.Name = "panel18";
-            panel18.Size = new Size(675, 345);
+            panel18.Size = new Size(844, 431);
             panel18.TabIndex = 6;
             // 
             // flowLayoutPanel2
@@ -1245,16 +1304,18 @@ namespace LibMS
             flowLayoutPanel2.Controls.Add(subRetPanel);
             flowLayoutPanel2.Controls.Add(borBookPanel1);
             flowLayoutPanel2.Location = new Point(0, 0);
+            flowLayoutPanel2.Margin = new Padding(4);
             flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(675, 347);
+            flowLayoutPanel2.Size = new Size(844, 434);
             flowLayoutPanel2.TabIndex = 3;
             // 
             // subRetReqPanel
             // 
             subRetReqPanel.Controls.Add(panel22);
-            subRetReqPanel.Location = new Point(3, 3);
+            subRetReqPanel.Location = new Point(4, 4);
+            subRetReqPanel.Margin = new Padding(4);
             subRetReqPanel.Name = "subRetReqPanel";
-            subRetReqPanel.Size = new Size(673, 135);
+            subRetReqPanel.Size = new Size(841, 169);
             subRetReqPanel.TabIndex = 0;
             // 
             // panel22
@@ -1265,26 +1326,29 @@ namespace LibMS
             panel22.Controls.Add(panel25);
             panel22.Dock = DockStyle.Fill;
             panel22.Location = new Point(0, 0);
+            panel22.Margin = new Padding(4);
             panel22.Name = "panel22";
-            panel22.Size = new Size(673, 135);
+            panel22.Size = new Size(841, 169);
             panel22.TabIndex = 0;
             // 
             // panel19
             // 
             panel19.BackColor = Color.Gold;
             panel19.Controls.Add(label56);
-            panel19.Location = new Point(582, 7);
+            panel19.Location = new Point(728, 9);
+            panel19.Margin = new Padding(4);
             panel19.Name = "panel19";
-            panel19.Size = new Size(73, 23);
+            panel19.Size = new Size(91, 29);
             panel19.TabIndex = 4;
             // 
             // label56
             // 
             label56.AutoSize = true;
             label56.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label56.Location = new Point(3, 3);
+            label56.Location = new Point(4, 4);
+            label56.Margin = new Padding(4, 0, 4, 0);
             label56.Name = "label56";
-            label56.Size = new Size(67, 17);
+            label56.Size = new Size(76, 20);
             label56.TabIndex = 0;
             label56.Text = "Borrowed";
             // 
@@ -1294,9 +1358,10 @@ namespace LibMS
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(539, 38);
+            button3.Location = new Point(674, 48);
+            button3.Margin = new Padding(4);
             button3.Name = "button3";
-            button3.Size = new Size(116, 28);
+            button3.Size = new Size(145, 35);
             button3.TabIndex = 2;
             button3.Text = "Submit Return Request  ";
             button3.UseVisualStyleBackColor = false;
@@ -1305,17 +1370,19 @@ namespace LibMS
             // panel25
             // 
             panel25.BackColor = Color.FloralWhite;
-            panel25.Location = new Point(22, 74);
+            panel25.Location = new Point(28, 92);
+            panel25.Margin = new Padding(4);
             panel25.Name = "panel25";
-            panel25.Size = new Size(631, 29);
+            panel25.Size = new Size(789, 36);
             panel25.TabIndex = 0;
             // 
             // subRetPanel
             // 
             subRetPanel.Controls.Add(retBookPanel1);
-            subRetPanel.Location = new Point(3, 144);
+            subRetPanel.Location = new Point(4, 181);
+            subRetPanel.Margin = new Padding(4);
             subRetPanel.Name = "subRetPanel";
-            subRetPanel.Size = new Size(673, 139);
+            subRetPanel.Size = new Size(841, 174);
             subRetPanel.TabIndex = 2;
             // 
             // retBookPanel1
@@ -1325,8 +1392,9 @@ namespace LibMS
             retBookPanel1.Controls.Add(panel29);
             retBookPanel1.Dock = DockStyle.Fill;
             retBookPanel1.Location = new Point(0, 0);
+            retBookPanel1.Margin = new Padding(4);
             retBookPanel1.Name = "retBookPanel1";
-            retBookPanel1.Size = new Size(673, 139);
+            retBookPanel1.Size = new Size(841, 174);
             retBookPanel1.TabIndex = 1;
             // 
             // button4
@@ -1337,9 +1405,10 @@ namespace LibMS
             button4.ForeColor = Color.Black;
             button4.Image = Properties.Resources.cycle__1_1;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(539, 43);
+            button4.Location = new Point(674, 54);
+            button4.Margin = new Padding(4);
             button4.Name = "button4";
-            button4.Size = new Size(116, 28);
+            button4.Size = new Size(145, 35);
             button4.TabIndex = 3;
             button4.Text = "Borrow Again";
             button4.TextAlign = ContentAlignment.MiddleRight;
@@ -1349,27 +1418,30 @@ namespace LibMS
             // 
             panel29.BackColor = Color.Honeydew;
             panel29.Controls.Add(label54);
-            panel29.Location = new Point(582, 11);
+            panel29.Location = new Point(728, 14);
+            panel29.Margin = new Padding(4);
             panel29.Name = "panel29";
-            panel29.Size = new Size(73, 23);
+            panel29.Size = new Size(91, 29);
             panel29.TabIndex = 2;
             // 
             // label54
             // 
             label54.AutoSize = true;
             label54.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label54.Location = new Point(6, 2);
+            label54.Location = new Point(8, 2);
+            label54.Margin = new Padding(4, 0, 4, 0);
             label54.Name = "label54";
-            label54.Size = new Size(64, 17);
+            label54.Size = new Size(72, 20);
             label54.TabIndex = 0;
             label54.Text = "Returned";
             // 
             // borBookPanel1
             // 
             borBookPanel1.Controls.Add(borPan);
-            borBookPanel1.Location = new Point(3, 289);
+            borBookPanel1.Location = new Point(4, 363);
+            borBookPanel1.Margin = new Padding(4);
             borBookPanel1.Name = "borBookPanel1";
-            borBookPanel1.Size = new Size(672, 110);
+            borBookPanel1.Size = new Size(840, 138);
             borBookPanel1.TabIndex = 1;
             // 
             // borPan
@@ -1379,35 +1451,39 @@ namespace LibMS
             borPan.Controls.Add(panel26);
             borPan.Dock = DockStyle.Fill;
             borPan.Location = new Point(0, 0);
+            borPan.Margin = new Padding(4);
             borPan.Name = "borPan";
-            borPan.Size = new Size(672, 110);
+            borPan.Size = new Size(840, 138);
             borPan.TabIndex = 1;
             // 
             // panel28
             // 
             panel28.BackColor = Color.Gold;
             panel28.Controls.Add(label55);
-            panel28.Location = new Point(580, 7);
+            panel28.Location = new Point(725, 9);
+            panel28.Margin = new Padding(4);
             panel28.Name = "panel28";
-            panel28.Size = new Size(73, 23);
+            panel28.Size = new Size(91, 29);
             panel28.TabIndex = 3;
             // 
             // label55
             // 
             label55.AutoSize = true;
             label55.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label55.Location = new Point(3, 3);
+            label55.Location = new Point(4, 4);
+            label55.Margin = new Padding(4, 0, 4, 0);
             label55.Name = "label55";
-            label55.Size = new Size(67, 17);
+            label55.Size = new Size(76, 20);
             label55.TabIndex = 0;
             label55.Text = "Borrowed";
             // 
             // panel26
             // 
             panel26.BackColor = Color.FloralWhite;
-            panel26.Location = new Point(22, 68);
+            panel26.Location = new Point(28, 85);
+            panel26.Margin = new Padding(4);
             panel26.Name = "panel26";
-            panel26.Size = new Size(631, 34);
+            panel26.Size = new Size(789, 42);
             panel26.TabIndex = 1;
             // 
             // btnRet
@@ -1416,9 +1492,10 @@ namespace LibMS
             btnRet.FlatStyle = FlatStyle.Flat;
             btnRet.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRet.ForeColor = Color.RoyalBlue;
-            btnRet.Location = new Point(251, 171);
+            btnRet.Location = new Point(314, 214);
+            btnRet.Margin = new Padding(4);
             btnRet.Name = "btnRet";
-            btnRet.Size = new Size(106, 34);
+            btnRet.Size = new Size(132, 42);
             btnRet.TabIndex = 5;
             btnRet.Text = "Returned";
             btnRet.UseVisualStyleBackColor = true;
@@ -1430,9 +1507,10 @@ namespace LibMS
             btnBor.FlatStyle = FlatStyle.Flat;
             btnBor.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBor.ForeColor = Color.RoyalBlue;
-            btnBor.Location = new Point(139, 171);
+            btnBor.Location = new Point(174, 214);
+            btnBor.Margin = new Padding(4);
             btnBor.Name = "btnBor";
-            btnBor.Size = new Size(106, 34);
+            btnBor.Size = new Size(132, 42);
             btnBor.TabIndex = 4;
             btnBor.Text = "Borrowed";
             btnBor.UseVisualStyleBackColor = true;
@@ -1444,9 +1522,10 @@ namespace LibMS
             btnAllAct.FlatStyle = FlatStyle.Flat;
             btnAllAct.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAllAct.ForeColor = Color.RoyalBlue;
-            btnAllAct.Location = new Point(27, 171);
+            btnAllAct.Location = new Point(34, 214);
+            btnAllAct.Margin = new Padding(4);
             btnAllAct.Name = "btnAllAct";
-            btnAllAct.Size = new Size(106, 34);
+            btnAllAct.Size = new Size(132, 42);
             btnAllAct.TabIndex = 3;
             btnAllAct.Text = "All Activity";
             btnAllAct.UseVisualStyleBackColor = true;
@@ -1457,9 +1536,10 @@ namespace LibMS
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.RoyalBlue;
-            label4.Location = new Point(27, 32);
+            label4.Location = new Point(34, 40);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(143, 31);
+            label4.Size = new Size(174, 38);
             label4.TabIndex = 0;
             label4.Text = "Activity Log";
             // 
@@ -1472,9 +1552,10 @@ namespace LibMS
             mainPanel.Controls.Add(dashboardPanel);
             mainPanel.Controls.Add(bookDetPanel);
             mainPanel.Controls.Add(reqSucPanel);
-            mainPanel.Location = new Point(269, 0);
+            mainPanel.Location = new Point(336, 0);
+            mainPanel.Margin = new Padding(4);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(736, 586);
+            mainPanel.Size = new Size(920, 732);
             mainPanel.TabIndex = 17;
             mainPanel.Paint += dashboardPanel_Paint;
             // 
@@ -1486,8 +1567,9 @@ namespace LibMS
             borReqPanel.Controls.Add(btnBackCat2);
             borReqPanel.Dock = DockStyle.Fill;
             borReqPanel.Location = new Point(0, 0);
+            borReqPanel.Margin = new Padding(4);
             borReqPanel.Name = "borReqPanel";
-            borReqPanel.Size = new Size(736, 586);
+            borReqPanel.Size = new Size(920, 732);
             borReqPanel.TabIndex = 18;
             borReqPanel.Visible = false;
             // 
@@ -1499,8 +1581,9 @@ namespace LibMS
             approvedPanel.Controls.Add(label50);
             approvedPanel.Dock = DockStyle.Fill;
             approvedPanel.Location = new Point(0, 0);
+            approvedPanel.Margin = new Padding(4);
             approvedPanel.Name = "approvedPanel";
-            approvedPanel.Size = new Size(736, 586);
+            approvedPanel.Size = new Size(920, 732);
             approvedPanel.TabIndex = 22;
             approvedPanel.Visible = false;
             // 
@@ -1513,9 +1596,10 @@ namespace LibMS
             btnApproved.ForeColor = Color.RoyalBlue;
             btnApproved.Image = Properties.Resources.log_out__1_2;
             btnApproved.ImageAlign = ContentAlignment.MiddleLeft;
-            btnApproved.Location = new Point(31, 26);
+            btnApproved.Location = new Point(39, 32);
+            btnApproved.Margin = new Padding(4);
             btnApproved.Name = "btnApproved";
-            btnApproved.Size = new Size(190, 29);
+            btnApproved.Size = new Size(238, 36);
             btnApproved.TabIndex = 5;
             btnApproved.Text = "Back                        ";
             btnApproved.UseVisualStyleBackColor = false;
@@ -1526,18 +1610,20 @@ namespace LibMS
             panel16.BackColor = Color.White;
             panel16.Controls.Add(panel17);
             panel16.Controls.Add(panel10);
-            panel16.Location = new Point(31, 122);
+            panel16.Location = new Point(39, 152);
+            panel16.Margin = new Padding(4);
             panel16.Name = "panel16";
-            panel16.Size = new Size(671, 146);
+            panel16.Size = new Size(839, 182);
             panel16.TabIndex = 2;
             // 
             // panel17
             // 
             panel17.BackColor = Color.Honeydew;
             panel17.Controls.Add(label51);
-            panel17.Location = new Point(579, 21);
+            panel17.Location = new Point(724, 26);
+            panel17.Margin = new Padding(4);
             panel17.Name = "panel17";
-            panel17.Size = new Size(77, 31);
+            panel17.Size = new Size(96, 39);
             panel17.TabIndex = 2;
             // 
             // label51
@@ -1546,9 +1632,10 @@ namespace LibMS
             label51.BackColor = Color.Honeydew;
             label51.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label51.ForeColor = Color.Green;
-            label51.Location = new Point(3, 6);
+            label51.Location = new Point(4, 8);
+            label51.Margin = new Padding(4, 0, 4, 0);
             label51.Name = "label51";
-            label51.Size = new Size(68, 17);
+            label51.Size = new Size(85, 21);
             label51.TabIndex = 0;
             label51.Text = "Approved";
             // 
@@ -1557,9 +1644,10 @@ namespace LibMS
             panel10.BackColor = Color.Honeydew;
             panel10.BorderStyle = BorderStyle.FixedSingle;
             panel10.Controls.Add(label52);
-            panel10.Location = new Point(18, 98);
+            panel10.Location = new Point(22, 122);
+            panel10.Margin = new Padding(4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(151, 31);
+            panel10.Size = new Size(188, 38);
             panel10.TabIndex = 1;
             // 
             // label52
@@ -1567,18 +1655,20 @@ namespace LibMS
             label52.AutoSize = true;
             label52.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label52.ForeColor = Color.Green;
-            label52.Location = new Point(3, 7);
+            label52.Location = new Point(4, 9);
+            label52.Margin = new Padding(4, 0, 4, 0);
             label52.Name = "label52";
-            label52.Size = new Size(79, 15);
+            label52.Size = new Size(98, 19);
             label52.TabIndex = 2;
             label52.Text = "Slip Number:";
             // 
             // label49
             // 
             label49.AutoSize = true;
-            label49.Location = new Point(31, 91);
+            label49.Location = new Point(39, 114);
+            label49.Margin = new Padding(4, 0, 4, 0);
             label49.Name = "label49";
-            label49.Size = new Size(341, 20);
+            label49.Size = new Size(413, 25);
             label49.TabIndex = 1;
             label49.Text = "View and edit your pending book borrow requests";
             // 
@@ -1587,9 +1677,10 @@ namespace LibMS
             label50.AutoSize = true;
             label50.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label50.ForeColor = Color.RoyalBlue;
-            label50.Location = new Point(31, 55);
+            label50.Location = new Point(39, 69);
+            label50.Margin = new Padding(4, 0, 4, 0);
             label50.Name = "label50";
-            label50.Size = new Size(171, 31);
+            label50.Size = new Size(209, 38);
             label50.TabIndex = 0;
             label50.Text = "Book Requests";
             // 
@@ -1604,17 +1695,19 @@ namespace LibMS
             panel6.Controls.Add(panel8);
             panel6.Controls.Add(btnViewBookReq);
             panel6.Controls.Add(label28);
-            panel6.Location = new Point(62, 55);
+            panel6.Location = new Point(78, 69);
+            panel6.Margin = new Padding(4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(611, 485);
+            panel6.Size = new Size(763, 606);
             panel6.TabIndex = 0;
             // 
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.clock__1_1;
-            pictureBox7.Location = new Point(283, 32);
+            pictureBox7.Location = new Point(354, 40);
+            pictureBox7.Margin = new Padding(4);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(45, 43);
+            pictureBox7.Size = new Size(56, 54);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 12;
             pictureBox7.TabStop = false;
@@ -1625,17 +1718,19 @@ namespace LibMS
             panel9.BorderStyle = BorderStyle.FixedSingle;
             panel9.Controls.Add(pictureBox8);
             panel9.Controls.Add(label26);
-            panel9.Location = new Point(21, 370);
+            panel9.Location = new Point(26, 462);
+            panel9.Margin = new Padding(4);
             panel9.Name = "panel9";
-            panel9.Size = new Size(563, 46);
+            panel9.Size = new Size(703, 57);
             panel9.TabIndex = 11;
             // 
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.check__1_2;
-            pictureBox8.Location = new Point(14, 10);
+            pictureBox8.Location = new Point(18, 12);
+            pictureBox8.Margin = new Padding(4);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(21, 27);
+            pictureBox8.Size = new Size(26, 34);
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
             // 
@@ -1644,9 +1739,10 @@ namespace LibMS
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI Semibold", 7F, FontStyle.Bold);
             label26.ForeColor = Color.RoyalBlue;
-            label26.Location = new Point(38, 16);
+            label26.Location = new Point(48, 20);
+            label26.Margin = new Padding(4, 0, 4, 0);
             label26.Name = "label26";
-            label26.Size = new Size(511, 15);
+            label26.Size = new Size(607, 19);
             label26.TabIndex = 0;
             label26.Text = "Once approved by admin, you'll receive your slip number and the book will be ready for pickup.";
             // 
@@ -1656,9 +1752,10 @@ namespace LibMS
             panel5.BorderStyle = BorderStyle.FixedSingle;
             panel5.Controls.Add(label18);
             panel5.Controls.Add(label19);
-            panel5.Location = new Point(22, 144);
+            panel5.Location = new Point(28, 180);
+            panel5.Margin = new Padding(4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(562, 73);
+            panel5.Size = new Size(702, 91);
             panel5.TabIndex = 10;
             // 
             // label18
@@ -1666,9 +1763,10 @@ namespace LibMS
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.RoyalBlue;
-            label18.Location = new Point(13, 29);
+            label18.Location = new Point(16, 36);
+            label18.Margin = new Padding(4, 0, 4, 0);
             label18.Name = "label18";
-            label18.Size = new Size(48, 28);
+            label18.Size = new Size(56, 32);
             label18.TabIndex = 1;
             label18.Text = "001";
             // 
@@ -1677,9 +1775,10 @@ namespace LibMS
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label19.ForeColor = Color.Olive;
-            label19.Location = new Point(13, 10);
+            label19.Location = new Point(16, 12);
+            label19.Margin = new Padding(4, 0, 4, 0);
             label19.Name = "label19";
-            label19.Size = new Size(77, 19);
+            label19.Size = new Size(90, 21);
             label19.TabIndex = 0;
             label19.Text = "Request ID";
             // 
@@ -1688,9 +1787,10 @@ namespace LibMS
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.Black;
-            label21.Location = new Point(177, 113);
+            label21.Location = new Point(221, 141);
+            label21.Margin = new Padding(4, 0, 4, 0);
             label21.Name = "label21";
-            label21.Size = new Size(243, 17);
+            label21.Size = new Size(287, 21);
             label21.TabIndex = 9;
             label21.Text = "Your request is pending admin approval";
             // 
@@ -1704,9 +1804,10 @@ namespace LibMS
             panel8.Controls.Add(label20);
             panel8.Controls.Add(label17);
             panel8.Controls.Add(label25);
-            panel8.Location = new Point(22, 223);
+            panel8.Location = new Point(28, 279);
+            panel8.Margin = new Padding(4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(562, 141);
+            panel8.Size = new Size(702, 176);
             panel8.TabIndex = 7;
             // 
             // label24
@@ -1714,9 +1815,10 @@ namespace LibMS
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI Semibold", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.RoyalBlue;
-            label24.Location = new Point(18, 105);
+            label24.Location = new Point(22, 131);
+            label24.Margin = new Padding(4, 0, 4, 0);
             label24.Name = "label24";
-            label24.Size = new Size(35, 12);
+            label24.Size = new Size(43, 15);
             label24.TabIndex = 15;
             label24.Text = "Status:";
             // 
@@ -1725,9 +1827,10 @@ namespace LibMS
             label23.AutoSize = true;
             label23.Font = new Font("Segoe UI Semibold", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.RoyalBlue;
-            label23.Location = new Point(18, 90);
+            label23.Location = new Point(22, 112);
+            label23.Margin = new Padding(4, 0, 4, 0);
             label23.Name = "label23";
-            label23.Size = new Size(60, 12);
+            label23.Size = new Size(70, 15);
             label23.TabIndex = 14;
             label23.Text = "Return Date";
             // 
@@ -1736,9 +1839,10 @@ namespace LibMS
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI Semibold", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.RoyalBlue;
-            label22.Location = new Point(18, 76);
+            label22.Location = new Point(22, 95);
+            label22.Margin = new Padding(4, 0, 4, 0);
             label22.Name = "label22";
-            label22.Size = new Size(65, 12);
+            label22.Size = new Size(76, 15);
             label22.TabIndex = 13;
             label22.Text = "Borrow Date:";
             // 
@@ -1747,9 +1851,10 @@ namespace LibMS
             label20.AutoSize = true;
             label20.Font = new Font("Segoe UI Semibold", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.RoyalBlue;
-            label20.Location = new Point(18, 59);
+            label20.Location = new Point(22, 74);
+            label20.Margin = new Padding(4, 0, 4, 0);
             label20.Name = "label20";
-            label20.Size = new Size(40, 12);
+            label20.Size = new Size(47, 15);
             label20.TabIndex = 12;
             label20.Text = "Author:";
             // 
@@ -1758,9 +1863,10 @@ namespace LibMS
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI Semibold", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.RoyalBlue;
-            label17.Location = new Point(18, 42);
+            label17.Location = new Point(22, 52);
+            label17.Margin = new Padding(4, 0, 4, 0);
             label17.Name = "label17";
-            label17.Size = new Size(30, 12);
+            label17.Size = new Size(37, 15);
             label17.TabIndex = 11;
             label17.Text = "Book:";
             // 
@@ -1769,9 +1875,10 @@ namespace LibMS
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label25.ForeColor = Color.MediumBlue;
-            label25.Location = new Point(13, 16);
+            label25.Location = new Point(16, 20);
+            label25.Margin = new Padding(4, 0, 4, 0);
             label25.Name = "label25";
-            label25.Size = new Size(106, 19);
+            label25.Size = new Size(123, 21);
             label25.TabIndex = 0;
             label25.Text = "Request Details";
             // 
@@ -1782,9 +1889,10 @@ namespace LibMS
             btnViewBookReq.FlatStyle = FlatStyle.Flat;
             btnViewBookReq.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnViewBookReq.ForeColor = Color.MidnightBlue;
-            btnViewBookReq.Location = new Point(22, 424);
+            btnViewBookReq.Location = new Point(28, 530);
+            btnViewBookReq.Margin = new Padding(4);
             btnViewBookReq.Name = "btnViewBookReq";
-            btnViewBookReq.Size = new Size(562, 38);
+            btnViewBookReq.Size = new Size(702, 48);
             btnViewBookReq.TabIndex = 6;
             btnViewBookReq.Text = "View in Book Requests";
             btnViewBookReq.UseVisualStyleBackColor = false;
@@ -1795,9 +1903,10 @@ namespace LibMS
             label28.AutoSize = true;
             label28.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label28.ForeColor = Color.RoyalBlue;
-            label28.Location = new Point(117, 75);
+            label28.Location = new Point(146, 94);
+            label28.Margin = new Padding(4, 0, 4, 0);
             label28.Name = "label28";
-            label28.Size = new Size(371, 38);
+            label28.Size = new Size(438, 45);
             label28.TabIndex = 0;
             label28.Text = "Borrow Request Submitted";
             // 
@@ -1810,9 +1919,10 @@ namespace LibMS
             btnBackCat2.ForeColor = Color.RoyalBlue;
             btnBackCat2.Image = Properties.Resources.log_out__1_2;
             btnBackCat2.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBackCat2.Location = new Point(39, 20);
+            btnBackCat2.Location = new Point(49, 25);
+            btnBackCat2.Margin = new Padding(4);
             btnBackCat2.Name = "btnBackCat2";
-            btnBackCat2.Size = new Size(190, 29);
+            btnBackCat2.Size = new Size(238, 36);
             btnBackCat2.TabIndex = 1;
             btnBackCat2.Text = "Back                         ";
             btnBackCat2.UseVisualStyleBackColor = false;
@@ -1824,8 +1934,9 @@ namespace LibMS
             borrowPanel.Controls.Add(btnBackCat1);
             borrowPanel.Dock = DockStyle.Fill;
             borrowPanel.Location = new Point(0, 0);
+            borrowPanel.Margin = new Padding(4);
             borrowPanel.Name = "borrowPanel";
-            borrowPanel.Size = new Size(736, 586);
+            borrowPanel.Size = new Size(920, 732);
             borrowPanel.TabIndex = 17;
             borrowPanel.Visible = false;
             // 
@@ -1833,210 +1944,228 @@ namespace LibMS
             // 
             panel3.BackColor = Color.White;
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(label16);
-            panel3.Controls.Add(label15);
-            panel3.Controls.Add(label14);
-            panel3.Controls.Add(label13);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label11);
+            panel3.Controls.Add(lblBorrowCopyright);
+            panel3.Controls.Add(lblBorrowPublisher);
+            panel3.Controls.Add(lblBorrowCategory);
+            panel3.Controls.Add(lblBorrowID);
+            panel3.Controls.Add(lblBorrowAuthor);
+            panel3.Controls.Add(lblBorrowTitle);
             panel3.Controls.Add(panel4);
-            panel3.Controls.Add(btnBorBook);
-            panel3.Controls.Add(txtPlanRetDate);
+            panel3.Controls.Add(btnBorrowBook);
+            panel3.Controls.Add(dtpReturnDate);
             panel3.Controls.Add(label7);
-            panel3.Controls.Add(txtBorDate);
+            panel3.Controls.Add(dtpBorrowDate);
             panel3.Controls.Add(label6);
-            panel3.Controls.Add(pictureBox2);
+            panel3.Controls.Add(picBorrowCover);
             panel3.Controls.Add(label5);
-            panel3.Location = new Point(71, 66);
+            panel3.Location = new Point(89, 82);
+            panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(609, 486);
+            panel3.Size = new Size(761, 607);
             panel3.TabIndex = 0;
             // 
-            // label16
+            // lblBorrowCopyright
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.RoyalBlue;
-            label16.Location = new Point(242, 168);
-            label16.Name = "label16";
-            label16.Size = new Size(71, 17);
-            label16.TabIndex = 13;
-            label16.Text = "Copyright:";
+            lblBorrowCopyright.AutoSize = true;
+            lblBorrowCopyright.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBorrowCopyright.ForeColor = Color.RoyalBlue;
+            lblBorrowCopyright.Location = new Point(302, 210);
+            lblBorrowCopyright.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowCopyright.Name = "lblBorrowCopyright";
+            lblBorrowCopyright.Size = new Size(81, 20);
+            lblBorrowCopyright.TabIndex = 13;
+            lblBorrowCopyright.Text = "Copyright:";
             // 
-            // label15
+            // lblBorrowPublisher
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.RoyalBlue;
-            label15.Location = new Point(242, 147);
-            label15.Name = "label15";
-            label15.Size = new Size(68, 17);
-            label15.TabIndex = 12;
-            label15.Text = "Publisher:";
+            lblBorrowPublisher.AutoSize = true;
+            lblBorrowPublisher.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBorrowPublisher.ForeColor = Color.RoyalBlue;
+            lblBorrowPublisher.Location = new Point(302, 184);
+            lblBorrowPublisher.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowPublisher.MaximumSize = new Size(350, 0);
+            lblBorrowPublisher.Name = "lblBorrowPublisher";
+            lblBorrowPublisher.Size = new Size(78, 20);
+            lblBorrowPublisher.TabIndex = 12;
+            lblBorrowPublisher.Text = "Publisher:";
             // 
-            // label14
+            // lblBorrowCopies
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.RoyalBlue;
-            label14.Location = new Point(242, 127);
-            label14.Name = "label14";
-            label14.Size = new Size(67, 17);
-            label14.TabIndex = 11;
-            label14.Text = "Category:";
+            lblBorrowCopies.AutoSize = true;
+            lblBorrowCopies.Font = new Font("Segoe UI Semibold", 7.2F, FontStyle.Bold);
+            lblBorrowCopies.ForeColor = Color.RoyalBlue;
+            lblBorrowCopies.Location = new Point(594, 62);
+            lblBorrowCopies.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowCopies.Name = "lblBorrowCopies";
+            lblBorrowCopies.Size = new Size(94, 20);
+            lblBorrowCopies.TabIndex = 2;
+            lblBorrowCopies.Text = "3 of 5 copies";
             // 
-            // label13
+            // lblBorrowCategory
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.RoyalBlue;
-            label13.Location = new Point(242, 110);
-            label13.Name = "label13";
-            label13.Size = new Size(59, 17);
-            label13.TabIndex = 10;
-            label13.Text = "Book ID:";
+            lblBorrowCategory.AutoSize = true;
+            lblBorrowCategory.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBorrowCategory.ForeColor = Color.RoyalBlue;
+            lblBorrowCategory.Location = new Point(302, 159);
+            lblBorrowCategory.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowCategory.MaximumSize = new Size(350, 0);
+            lblBorrowCategory.Name = "lblBorrowCategory";
+            lblBorrowCategory.Size = new Size(76, 20);
+            lblBorrowCategory.TabIndex = 11;
+            lblBorrowCategory.Text = "Category:";
             // 
-            // label12
+            // lblBorrowID
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 6F);
-            label12.ForeColor = Color.Gray;
-            label12.Location = new Point(242, 90);
-            label12.Name = "label12";
-            label12.Size = new Size(41, 12);
-            label12.TabIndex = 9;
-            label12.Text = "(Author)";
+            lblBorrowID.AutoSize = true;
+            lblBorrowID.Font = new Font("Segoe UI Semibold", 7.20000029F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBorrowID.ForeColor = Color.RoyalBlue;
+            lblBorrowID.Location = new Point(302, 138);
+            lblBorrowID.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowID.Name = "lblBorrowID";
+            lblBorrowID.Size = new Size(67, 20);
+            lblBorrowID.TabIndex = 10;
+            lblBorrowID.Text = "Book ID:";
             // 
-            // label11
+            // lblBorrowAuthor
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.RoyalBlue;
-            label11.Location = new Point(239, 61);
-            label11.Name = "label11";
-            label11.Size = new Size(61, 25);
-            label11.TabIndex = 8;
-            label11.Text = "(Title)";
+            lblBorrowAuthor.AutoSize = true;
+            lblBorrowAuthor.Font = new Font("Segoe UI", 6F);
+            lblBorrowAuthor.ForeColor = Color.Gray;
+            lblBorrowAuthor.Location = new Point(302, 112);
+            lblBorrowAuthor.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowAuthor.MaximumSize = new Size(350, 0);
+            lblBorrowAuthor.Name = "lblBorrowAuthor";
+            lblBorrowAuthor.Size = new Size(52, 15);
+            lblBorrowAuthor.TabIndex = 9;
+            lblBorrowAuthor.Text = "(Author)";
+            // 
+            // lblBorrowTitle
+            // 
+            lblBorrowTitle.AutoSize = true;
+            lblBorrowTitle.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBorrowTitle.ForeColor = Color.RoyalBlue;
+            lblBorrowTitle.Location = new Point(299, 76);
+            lblBorrowTitle.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowTitle.MaximumSize = new Size(350, 0);
+            lblBorrowTitle.Name = "lblBorrowTitle";
+            lblBorrowTitle.Size = new Size(71, 30);
+            lblBorrowTitle.TabIndex = 8;
+            lblBorrowTitle.Text = "(Title)";
             // 
             // panel4
             // 
             panel4.BackColor = Color.Lavender;
             panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(label9);
+            panel4.Controls.Add(lblBorrowCopies);
+            panel4.Controls.Add(lblBorrowStatus);
             panel4.Controls.Add(label8);
-            panel4.Location = new Point(22, 229);
+            panel4.Location = new Point(28, 286);
+            panel4.Margin = new Padding(4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(558, 73);
+            panel4.Size = new Size(697, 91);
             panel4.TabIndex = 7;
             // 
-            // label10
+            // lblBorrowStatus
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 7F);
-            label10.ForeColor = Color.Gray;
-            label10.Location = new Point(475, 50);
-            label10.Name = "label10";
-            label10.Size = new Size(73, 15);
-            label10.TabIndex = 2;
-            label10.Text = "3 of 5 copies";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.Green;
-            label9.Location = new Point(13, 29);
-            label9.Name = "label9";
-            label9.Size = new Size(115, 28);
-            label9.TabIndex = 1;
-            label9.Text = "AVAILABLE";
+            lblBorrowStatus.AutoSize = true;
+            lblBorrowStatus.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBorrowStatus.ForeColor = Color.Green;
+            lblBorrowStatus.Location = new Point(16, 36);
+            lblBorrowStatus.Margin = new Padding(4, 0, 4, 0);
+            lblBorrowStatus.Name = "lblBorrowStatus";
+            lblBorrowStatus.Size = new Size(140, 32);
+            lblBorrowStatus.TabIndex = 1;
+            lblBorrowStatus.Text = "AVAILABLE";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
             label8.ForeColor = Color.RoyalBlue;
-            label8.Location = new Point(13, 10);
+            label8.Location = new Point(16, 12);
+            label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(109, 19);
+            label8.Size = new Size(125, 21);
             label8.TabIndex = 0;
             label8.Text = "Available Status";
             // 
-            // btnBorBook
+            // btnBorrowBook
             // 
-            btnBorBook.BackColor = Color.Gold;
-            btnBorBook.FlatAppearance.BorderSize = 0;
-            btnBorBook.FlatStyle = FlatStyle.Flat;
-            btnBorBook.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBorBook.ForeColor = Color.MidnightBlue;
-            btnBorBook.Location = new Point(22, 424);
-            btnBorBook.Name = "btnBorBook";
-            btnBorBook.Size = new Size(558, 38);
-            btnBorBook.TabIndex = 6;
-            btnBorBook.Text = "Borrowed Book";
-            btnBorBook.UseVisualStyleBackColor = false;
-            btnBorBook.Click += button2_Click;
+            btnBorrowBook.BackColor = Color.Gold;
+            btnBorrowBook.FlatAppearance.BorderSize = 0;
+            btnBorrowBook.FlatStyle = FlatStyle.Flat;
+            btnBorrowBook.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBorrowBook.ForeColor = Color.MidnightBlue;
+            btnBorrowBook.Location = new Point(28, 530);
+            btnBorrowBook.Margin = new Padding(4);
+            btnBorrowBook.Name = "btnBorrowBook";
+            btnBorrowBook.Size = new Size(698, 48);
+            btnBorrowBook.TabIndex = 6;
+            btnBorrowBook.Text = "Borrowed Book";
+            btnBorrowBook.UseVisualStyleBackColor = false;
+            btnBorrowBook.Click += button2_Click;
             // 
-            // txtPlanRetDate
+            // dtpReturnDate
             // 
-            txtPlanRetDate.BackColor = SystemColors.Window;
-            txtPlanRetDate.BorderStyle = BorderStyle.FixedSingle;
-            txtPlanRetDate.Location = new Point(22, 381);
-            txtPlanRetDate.Name = "txtPlanRetDate";
-            txtPlanRetDate.Size = new Size(558, 27);
-            txtPlanRetDate.TabIndex = 5;
-            txtPlanRetDate.Text = "dd/mm/yyyy";
+            dtpReturnDate.BackColor = SystemColors.Window;
+            dtpReturnDate.Location = new Point(28, 476);
+            dtpReturnDate.Margin = new Padding(4);
+            dtpReturnDate.Name = "dtpReturnDate";
+            dtpReturnDate.Size = new Size(697, 31);
+            dtpReturnDate.TabIndex = 5;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.RoyalBlue;
-            label7.Location = new Point(22, 358);
+            label7.Location = new Point(28, 448);
+            label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(151, 20);
+            label7.Size = new Size(186, 25);
             label7.TabIndex = 4;
             label7.Text = "Planned Return Date";
             // 
-            // txtBorDate
+            // dtpBorrowDate
             // 
-            txtBorDate.BackColor = SystemColors.Window;
-            txtBorDate.BorderStyle = BorderStyle.FixedSingle;
-            txtBorDate.Location = new Point(22, 329);
-            txtBorDate.Name = "txtBorDate";
-            txtBorDate.Size = new Size(558, 27);
-            txtBorDate.TabIndex = 3;
-            txtBorDate.Text = "dd/mm/yyyy";
-            txtBorDate.TextChanged += txtBorDate_TextChanged;
+            dtpBorrowDate.BackColor = SystemColors.Window;
+            dtpBorrowDate.Location = new Point(28, 411);
+            dtpBorrowDate.Margin = new Padding(4);
+            dtpBorrowDate.Name = "dtpBorrowDate";
+            dtpBorrowDate.Size = new Size(697, 31);
+            dtpBorrowDate.TabIndex = 3;
+            dtpBorrowDate.TextChanged += txtBorDate_TextChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.RoyalBlue;
-            label6.Location = new Point(22, 306);
+            label6.Location = new Point(28, 382);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(95, 20);
+            label6.Size = new Size(117, 25);
             label6.TabIndex = 2;
             label6.Text = "Borrow Date";
             // 
-            // pictureBox2
+            // picBorrowCover
             // 
-            pictureBox2.Location = new Point(22, 19);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(201, 202);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            picBorrowCover.Location = new Point(28, 24);
+            picBorrowCover.Margin = new Padding(4);
+            picBorrowCover.Name = "picBorrowCover";
+            picBorrowCover.Size = new Size(251, 252);
+            picBorrowCover.TabIndex = 1;
+            picBorrowCover.TabStop = false;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.RoyalBlue;
-            label5.Location = new Point(229, 19);
+            label5.Location = new Point(286, 24);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(183, 38);
+            label5.Size = new Size(214, 45);
             label5.TabIndex = 0;
             label5.Text = "Book Details";
             // 
@@ -2049,9 +2178,10 @@ namespace LibMS
             btnBackCat1.ForeColor = Color.RoyalBlue;
             btnBackCat1.Image = Properties.Resources.log_out__1_2;
             btnBackCat1.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBackCat1.Location = new Point(27, 12);
+            btnBackCat1.Location = new Point(34, 15);
+            btnBackCat1.Margin = new Padding(4);
             btnBackCat1.Name = "btnBackCat1";
-            btnBackCat1.Size = new Size(190, 29);
+            btnBackCat1.Size = new Size(238, 36);
             btnBackCat1.TabIndex = 1;
             btnBackCat1.Text = "Back                         ";
             btnBackCat1.UseVisualStyleBackColor = false;
@@ -2064,10 +2194,17 @@ namespace LibMS
             reqSucPanel.Controls.Add(panel14);
             reqSucPanel.Controls.Add(label46);
             reqSucPanel.Controls.Add(label47);
+            reqSucPanel.Controls.Add(lblRequestID);
+            reqSucPanel.Controls.Add(lblReqBook);
+            reqSucPanel.Controls.Add(lblReqAuthor);
+            reqSucPanel.Controls.Add(lblReqBorrowDate);
+            reqSucPanel.Controls.Add(lblReqReturnDate);
+            reqSucPanel.Controls.Add(lblReqStatus);
             reqSucPanel.Dock = DockStyle.Fill;
             reqSucPanel.Location = new Point(0, 0);
+            reqSucPanel.Margin = new Padding(4);
             reqSucPanel.Name = "reqSucPanel";
-            reqSucPanel.Size = new Size(736, 586);
+            reqSucPanel.Size = new Size(920, 732);
             reqSucPanel.TabIndex = 21;
             reqSucPanel.Visible = false;
             // 
@@ -2080,9 +2217,10 @@ namespace LibMS
             btnBack1.ForeColor = Color.RoyalBlue;
             btnBack1.Image = Properties.Resources.log_out__1_2;
             btnBack1.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBack1.Location = new Point(24, 23);
+            btnBack1.Location = new Point(30, 29);
+            btnBack1.Margin = new Padding(4);
             btnBack1.Name = "btnBack1";
-            btnBack1.Size = new Size(190, 29);
+            btnBack1.Size = new Size(238, 36);
             btnBack1.TabIndex = 4;
             btnBack1.Text = "Back                        ";
             btnBack1.UseVisualStyleBackColor = false;
@@ -2093,17 +2231,19 @@ namespace LibMS
             panel15.BackColor = Color.Honeydew;
             panel15.Controls.Add(pictureBox10);
             panel15.Controls.Add(label48);
-            panel15.Location = new Point(31, 128);
+            panel15.Location = new Point(39, 160);
+            panel15.Margin = new Padding(4);
             panel15.Name = "panel15";
-            panel15.Size = new Size(671, 49);
+            panel15.Size = new Size(839, 61);
             panel15.TabIndex = 3;
             // 
             // pictureBox10
             // 
             pictureBox10.Image = Properties.Resources.healthy__1_;
-            pictureBox10.Location = new Point(22, 18);
+            pictureBox10.Location = new Point(28, 22);
+            pictureBox10.Margin = new Padding(4);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(22, 20);
+            pictureBox10.Size = new Size(28, 25);
             pictureBox10.TabIndex = 1;
             pictureBox10.TabStop = false;
             // 
@@ -2112,9 +2252,10 @@ namespace LibMS
             label48.AutoSize = true;
             label48.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label48.ForeColor = Color.Green;
-            label48.Location = new Point(44, 15);
+            label48.Location = new Point(55, 19);
+            label48.Margin = new Padding(4, 0, 4, 0);
             label48.Name = "label48";
-            label48.Size = new Size(226, 19);
+            label48.Size = new Size(267, 21);
             label48.TabIndex = 0;
             label48.Text = "Book request updated successfully.";
             // 
@@ -2123,9 +2264,10 @@ namespace LibMS
             panel14.BackColor = Color.White;
             panel14.Controls.Add(btnDelete3);
             panel14.Controls.Add(btnEdit2);
-            panel14.Location = new Point(31, 190);
+            panel14.Location = new Point(39, 238);
+            panel14.Margin = new Padding(4);
             panel14.Name = "panel14";
-            panel14.Size = new Size(671, 110);
+            panel14.Size = new Size(839, 138);
             panel14.TabIndex = 2;
             // 
             // btnDelete3
@@ -2134,9 +2276,10 @@ namespace LibMS
             btnDelete3.FlatAppearance.BorderSize = 0;
             btnDelete3.FlatStyle = FlatStyle.Flat;
             btnDelete3.Image = Properties.Resources.x;
-            btnDelete3.Location = new Point(607, 32);
+            btnDelete3.Location = new Point(759, 40);
+            btnDelete3.Margin = new Padding(4);
             btnDelete3.Name = "btnDelete3";
-            btnDelete3.Size = new Size(42, 36);
+            btnDelete3.Size = new Size(52, 45);
             btnDelete3.TabIndex = 1;
             btnDelete3.UseVisualStyleBackColor = false;
             // 
@@ -2146,18 +2289,20 @@ namespace LibMS
             btnEdit2.FlatAppearance.BorderSize = 0;
             btnEdit2.FlatStyle = FlatStyle.Flat;
             btnEdit2.Image = Properties.Resources.edit__1_1;
-            btnEdit2.Location = new Point(559, 31);
+            btnEdit2.Location = new Point(699, 39);
+            btnEdit2.Margin = new Padding(4);
             btnEdit2.Name = "btnEdit2";
-            btnEdit2.Size = new Size(42, 36);
+            btnEdit2.Size = new Size(52, 45);
             btnEdit2.TabIndex = 0;
             btnEdit2.UseVisualStyleBackColor = false;
             // 
             // label46
             // 
             label46.AutoSize = true;
-            label46.Location = new Point(31, 91);
+            label46.Location = new Point(39, 114);
+            label46.Margin = new Padding(4, 0, 4, 0);
             label46.Name = "label46";
-            label46.Size = new Size(341, 20);
+            label46.Size = new Size(413, 25);
             label46.TabIndex = 1;
             label46.Text = "View and edit your pending book borrow requests";
             // 
@@ -2166,21 +2311,80 @@ namespace LibMS
             label47.AutoSize = true;
             label47.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label47.ForeColor = Color.RoyalBlue;
-            label47.Location = new Point(27, 55);
+            label47.Location = new Point(34, 69);
+            label47.Margin = new Padding(4, 0, 4, 0);
             label47.Name = "label47";
-            label47.Size = new Size(171, 31);
+            label47.Size = new Size(209, 38);
             label47.TabIndex = 0;
             label47.Text = "Book Requests";
             // 
+            // lblRequestID
+            // 
+            lblRequestID.AutoSize = true;
+            lblRequestID.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblRequestID.ForeColor = Color.Navy;
+            lblRequestID.Location = new Point(275, 225);
+            lblRequestID.Margin = new Padding(4, 0, 4, 0);
+            lblRequestID.Name = "lblRequestID";
+            lblRequestID.Size = new Size(0, 48);
+            lblRequestID.TabIndex = 5;
+            // 
+            // lblReqBook
+            // 
+            lblReqBook.AutoSize = true;
+            lblReqBook.Location = new Point(275, 350);
+            lblReqBook.Margin = new Padding(4, 0, 4, 0);
+            lblReqBook.Name = "lblReqBook";
+            lblReqBook.Size = new Size(0, 25);
+            lblReqBook.TabIndex = 6;
+            // 
+            // lblReqAuthor
+            // 
+            lblReqAuthor.AutoSize = true;
+            lblReqAuthor.Location = new Point(275, 400);
+            lblReqAuthor.Margin = new Padding(4, 0, 4, 0);
+            lblReqAuthor.Name = "lblReqAuthor";
+            lblReqAuthor.Size = new Size(0, 25);
+            lblReqAuthor.TabIndex = 7;
+            // 
+            // lblReqBorrowDate
+            // 
+            lblReqBorrowDate.AutoSize = true;
+            lblReqBorrowDate.Location = new Point(275, 450);
+            lblReqBorrowDate.Margin = new Padding(4, 0, 4, 0);
+            lblReqBorrowDate.Name = "lblReqBorrowDate";
+            lblReqBorrowDate.Size = new Size(0, 25);
+            lblReqBorrowDate.TabIndex = 8;
+            // 
+            // lblReqReturnDate
+            // 
+            lblReqReturnDate.AutoSize = true;
+            lblReqReturnDate.Location = new Point(275, 500);
+            lblReqReturnDate.Margin = new Padding(4, 0, 4, 0);
+            lblReqReturnDate.Name = "lblReqReturnDate";
+            lblReqReturnDate.Size = new Size(0, 25);
+            lblReqReturnDate.TabIndex = 9;
+            // 
+            // lblReqStatus
+            // 
+            lblReqStatus.AutoSize = true;
+            lblReqStatus.ForeColor = Color.IndianRed;
+            lblReqStatus.Location = new Point(275, 550);
+            lblReqStatus.Margin = new Padding(4, 0, 4, 0);
+            lblReqStatus.Name = "lblReqStatus";
+            lblReqStatus.Size = new Size(0, 25);
+            lblReqStatus.TabIndex = 10;
+            // 
             // StudDash
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1006, 586);
+            ClientSize = new Size(1258, 732);
             Controls.Add(panelsidebar);
             Controls.Add(mainPanel);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4);
             Name = "StudDash";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Dashboard";
@@ -2262,7 +2466,7 @@ namespace LibMS
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBorrowCover).EndInit();
             reqSucPanel.ResumeLayout(false);
             reqSucPanel.PerformLayout();
             panel15.ResumeLayout(false);
@@ -2324,22 +2528,20 @@ namespace LibMS
         private Panel panel3;
         private Label label5;
         private Label label6;
-        private PictureBox pictureBox2;
-        private TextBox txtBorDate;
-        private TextBox txtPlanRetDate;
+        private PictureBox picBorrowCover;
         private Label label7;
-        private Button btnBorBook;
+        private Button btnBorrowBook; // Borrow Book Button
         private Panel panel4;
         private Label label8;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label13;
-        private Label label12;
+        private Label lblBorrowTitle; // Borrow Title
+        private Label lblBorrowCopies; // Borrow Copies
+        private Label lblBorrowStatus; // Borrow Status
+        private Label lblBorrowID; // Borrow ID
+        private Label lblBorrowAuthor; // Borrow Author
         private Button btnBackCat1;
-        private Label label16;
-        private Label label15;
-        private Label label14;
+        private Label lblBorrowCopyright; // Borrow Copyright
+        private Label lblBorrowPublisher;
+        private Label lblBorrowCategory; // Borrow Category
         private Panel borReqPanel;
         private Button btnBackCat2;
         private Panel panel6;
@@ -2437,5 +2639,15 @@ namespace LibMS
         private Panel panel15;
         private PictureBox pictureBox10;
         private Label label48;
+
+        // Request Success Panel Labels
+        private Label lblRequestID;
+        private Label lblReqBook;
+        private Label lblReqAuthor;
+        private Label lblReqBorrowDate;
+        private Label lblReqReturnDate;
+        private Label lblReqStatus;
+        private DateTimePicker dtpReturnDate;
+        private DateTimePicker dtpBorrowDate;
     }
 }

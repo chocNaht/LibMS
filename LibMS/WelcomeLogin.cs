@@ -1,5 +1,4 @@
 using LibMS.DBData;
-using LibMS.DBData;
 using Microsoft.Data.SqlClient;
 
 namespace LibMS
