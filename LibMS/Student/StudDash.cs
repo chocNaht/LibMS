@@ -42,6 +42,8 @@ namespace LibMS
             {
                 BookCard card = new(book);
 
+                card.BookSelected += ShowBookDetails;
+
                 flowLayoutPanel1.Controls.Add(card);
             }
 

@@ -201,6 +201,7 @@
             btnSelect.Text = "Select";
 
             btnSelect.UseVisualStyleBackColor = false;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
 
             // ======================
             // ADD LABELS TO TABLE
