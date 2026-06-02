@@ -1,4 +1,5 @@
-﻿using LibMS.Models;
+﻿using LibMS.DBData;
+using LibMS.Models;
 
 namespace LibMS
 {
@@ -9,6 +10,7 @@ namespace LibMS
         // Show book details in the borrow panel
         private void ShowBookDetails(Book book)
         {
+            _selectedBook = book;
             ShowPanel(borrowPanel);
 
             lblBorrowTitle.Text = book.Title;
@@ -39,6 +41,7 @@ namespace LibMS
                 book.AvailableCopies > 0;
         }
 
+        // Load book cover image in the borrow panel
         private void LoadBorrowCover(Book book)
         {
             picBorrowCover.Image = null;
@@ -61,46 +64,91 @@ namespace LibMS
             }
         }
 
-        private void btnBorrowBook_Click(object sender, EventArgs e)
+        // Handle borrow button click
+        private void btnBorrowBook_Click(object sender,EventArgs e)
         {
             if (_selectedBook == null)
                 return;
 
-            ShowPanel(reqSucPanel);
+            BookRepository repo = new();
 
-            lblReqBook.Text = $"Book: {_selectedBook.Title}";
-
-            lblReqAuthor.Text = $"Author: {_selectedBook.Author}";
-
-            lblReqBorrowDate.Text = $"Borrow Date: {dtpBorrowDate.Value:yyyy-MM-dd}";
-
-            lblReqReturnDate.Text = $"Return Date: {dtpReturnDate.Value:yyyy-MM-dd}";
-
-            lblReqStatus.Text = "Status: Pending Approval";
-
-            Random random = new();
+            int requestId =
+                repo.CreateRequest(
+                    _userId,
+                    _selectedBook.BookID,
+                    dtpBorrowDate.Value,
+                    dtpReturnDate.Value);
 
             lblRequestID.Text =
-                random.Next(100, 999)
-                .ToString();
+                requestId.ToString();
+
+            ShowPanel(reqSucPanel);
+
+            panel6.Visible = true;
+            panel6.BringToFront();
+
+            lblReqBook.Text =
+                $"Book: {_selectedBook.Title}";
+
+            lblReqAuthor.Text =
+                $"Author: {_selectedBook.Author}";
+
+            lblReqBorrowDate.Text =
+                $"Borrow Date: {dtpBorrowDate.Value:yyyy-MM-dd}";
+
+            lblReqReturnDate.Text =
+                $"Return Date: {dtpReturnDate.Value:yyyy-MM-dd}";
+
+            lblReqStatus.Text =
+                "Status: Pending Approval";
+
+            lblReqStatus.ForeColor =
+                Color.IndianRed;
         }
 
         private void btnEdit1_Click(
             object sender,
             EventArgs e)
         {
-            ShowPanel(borReqPanel);
+            ShowPanel(reqSucPanel);
 
             panel6.Visible = false;
             approvedPanel.Visible = false;
             brEditPanel.Visible = true;
         }
 
-        private void btnUpdReq1_Click(
-            object sender,
-            EventArgs e)
+
+        private void btnUpdReq1_Click(object sender, EventArgs e)
+{
+    BookRequestRepository repo = new();
+
+    int bookId =
+        Convert.ToInt32(
+            cmbEditBook.SelectedValue);
+
+    bool success =
+        repo.UpdateRequest(
+            _editingRequestId,
+            bookId,
+            dtfEditBorrowDate.Value,
+            dtfEditReturnDate.Value);
+
+    if (success)
+    {
+        MessageBox.Show(
+            "Request updated.");
+
+        ShowPanel(approvedPanel);
+
+        LoadApprovedRequests();
+    }
+}
+
+        private void btnCan1_Click(
+    object sender,
+    EventArgs e)
         {
-            ShowPanel(reqSucPanel);
+            ShowPanel(approvedPanel);
         }
     }
 }

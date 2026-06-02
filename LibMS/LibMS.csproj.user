@@ -4,6 +4,12 @@
     <Compile Update="AdmDash.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Controls\ActivityCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\ApprovedRequestCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Controls\BookCard.cs">
       <SubType>UserControl</SubType>
     </Compile>

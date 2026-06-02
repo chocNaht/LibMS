@@ -17,3 +17,5 @@
 --(8, 'Digital Arts: An Introduction to New Media', 'Catherine A. Hope and John Charles Ryan', '2014-04-01', 'Bloomsbury Publishing', 'Multimedia Arts', 'Image\Books\8.jpg', 10, 10),
 --(9, 'Psychology (Global Edition)', 'Saundra K. Ciccarelli and J. Noland White', '2014-02-18', 'Pearson', 'Psychology', 'Image\Books\9.jpg', 10, 10),
 --(10, 'Tourism Management (Seventh Edition)', 'Stephen J. Page', '2025-01-05', 'Routledge', 'Tourism', 'Image\Books\10.jpg', 10, 10);
+
+SELECT * FROM Request;

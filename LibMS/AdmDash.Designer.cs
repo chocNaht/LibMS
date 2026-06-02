@@ -2012,7 +2012,8 @@
             // 
             panel6.BackColor = Color.Ivory;
             panel6.Controls.Add(label12);
-            panel6.Location = new Point(336, 148);
+            panel6.Dock = DockStyle.Fill;
+            panel6.Visible = false;
             panel6.Name = "panel6";
             panel6.Size = new Size(317, 101);
             panel6.TabIndex = 8;

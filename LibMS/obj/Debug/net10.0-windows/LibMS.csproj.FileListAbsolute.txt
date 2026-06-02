@@ -131,3 +131,5 @@ C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\Image\Books\2.jpg
 C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\Image\Books\4.jpg
 C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\Image\Books\6.jpg
 C:\Users\user\Desktop\LibMS\LibMS\bin\Debug\net10.0-windows\Image\Books\7.jpg
+C:\Users\user\Desktop\LibMS\LibMS\obj\Debug\net10.0-windows\LibMS.Controls.ApprovedRequestCard.resources
+C:\Users\user\Desktop\LibMS\LibMS\obj\Debug\net10.0-windows\LibMS.Controls.ActivityCard.resources

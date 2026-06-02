@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using LibMS.DBData;
 
 namespace LibMS
 {
@@ -20,7 +21,34 @@ namespace LibMS
 
         private void btnDelete2_Click(object sender, System.EventArgs e)
         {
-            DeletePanel(editReqPanel);
+            DialogResult result =
+        MessageBox.Show(
+            "Are you sure you want to delete this request?",
+            "Confirm Delete",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning);
+
+            if (result != DialogResult.Yes)
+                return;
+
+            BookRequestRepository repo = new();
+
+            repo.CancelRequest(_editingRequestId);
+
+            MessageBox.Show(
+                "Request deleted successfully.");
+
+            ShowBookRequestsPage();
+        }
+
+        private void ShowBookRequestsPage()
+        {
+            ShowPanel(approvedPanel);
+
+            approvedPanel.Visible = true;
+            approvedPanel.BringToFront();
+
+            LoadApprovedRequests();
         }
 
         private void GoHome()

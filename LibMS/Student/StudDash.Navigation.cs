@@ -26,6 +26,7 @@ namespace LibMS
             target.BringToFront();
         }
 
+        // Initialize the list of main panels and set their properties
         private void InitializePanels()
         {
             mainPanels.Clear();
@@ -38,9 +39,10 @@ namespace LibMS
                 borReqPanel,
                 alpanel,
                 bookDetPanel,
-                reqSucPanel
+                reqSucPanel,
+                approvedPanel,
+                brEditPanel
             });
-
             foreach (var panel in mainPanels)
             {
                 panel.Dock = DockStyle.Fill;
@@ -55,16 +57,29 @@ namespace LibMS
             ShowPanel(dashboardPanel);
         }
 
-        private void btnStudBr_Click(object sender, System.EventArgs e)
+        // Book Request Panel
+        private void btnStudBr_Click(object sender, EventArgs e)
         {
             SetActive(btnStudBr, btnStudDash, btnStudActLog);
-            ShowPanel(brpanel);
+
+            ShowPanel(borReqPanel);
+
+            approvedPanel.Visible = true;
+            approvedPanel.BringToFront();
+
+            LoadApprovedRequests();
         }
 
-        private void btnStudActLog_Click(object sender, System.EventArgs e)
+        private void btnStudActLog_Click(object sender, EventArgs e)
         {
             SetActive(btnStudActLog, btnStudDash, btnStudBr);
+
             ShowPanel(alpanel);
+
+            LoadActivityLogs();
+            LoadActivitySummary();
+
+            flowActivityLogs.BringToFront();
         }
     }
 }

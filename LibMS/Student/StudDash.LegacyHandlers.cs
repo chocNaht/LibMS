@@ -16,17 +16,23 @@ namespace LibMS
             => ShowPanel(brpanel);
 
         private void btnBackCat1_Click(object sender, EventArgs e)
-            => ShowPanel(dashboardPanel);
+            => GoHome();
 
         private void btnBackCat3_Click(object sender, EventArgs e)
             => ShowPanel(borReqPanel);
 
         private void btnApproved_Click(object sender, EventArgs e)
-            => ShowPanel(borReqPanel);
+            => ShowPanel(dashboardPanel);
 
+        // View Book Request
         private void btnViewBookReq_Click(object sender, EventArgs e)
         {
-            ShowPanel(bookDetPanel);
+            ShowPanel(borReqPanel);
+
+            approvedPanel.Visible = true;
+            approvedPanel.BringToFront();
+
+            LoadApprovedRequests();
         }
 
         private void button2_Click(object sender, EventArgs e)

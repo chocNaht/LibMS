@@ -139,7 +139,6 @@
             label8.Size = new Size(98, 21);
             label8.TabIndex = 20;
             label8.Text = "Notifications";
-            label8.Click += label8_Click;
             // 
             // label7
             // 
@@ -206,7 +205,6 @@
             label4.Size = new Size(66, 21);
             label4.TabIndex = 14;
             label4.Text = "anytime";
-            label4.Click += label4_Click;
             // 
             // pictureBox4
             // 

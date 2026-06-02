@@ -2,25 +2,40 @@
 {
     public partial class StudDash
     {
-        private void btnAllAct_Click(object sender, System.EventArgs e)
+        private void btnAllAct_Click(
+    object sender,
+    EventArgs e)
         {
-            subRetPanel.Visible = true;
-            subRetReqPanel.Visible = true;
-            borBookPanel1.Visible = true;
+            DisplayActivityLogs(
+                _activityLogs);
         }
 
-        private void btnBor_Click(object sender, System.EventArgs e)
+        private void btnBor_Click(
+    object sender,
+    EventArgs e)
         {
-            subRetPanel.Visible = false;
-            subRetReqPanel.Visible = true;
-            borBookPanel1.Visible = true;
+            var borrowed =
+                _activityLogs
+                    .Where(x =>
+                        x.Status == "Borrowed")
+                    .ToList();
+
+            DisplayActivityLogs(
+                borrowed);
         }
 
-        private void btnRet_Click(object sender, System.EventArgs e)
+        private void btnRet_Click(
+    object sender,
+    EventArgs e)
         {
-            subRetPanel.Visible = true;
-            subRetReqPanel.Visible = false;
-            borBookPanel1.Visible = false;
+            var returned =
+                _activityLogs
+                    .Where(x =>
+                        x.Status == "Returned")
+                    .ToList();
+
+            DisplayActivityLogs(
+                returned);
         }
     }
 }

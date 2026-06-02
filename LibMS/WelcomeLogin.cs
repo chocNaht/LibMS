@@ -10,6 +10,33 @@ namespace LibMS
         public WelcomeLogin()
         {
             InitializeComponent();
+            txtPass1.UseSystemPasswordChar = true;
+        }
+
+        private void WelcomeLogin_Load(object sender, EventArgs e)
+        {
+            
+
+            visible1.Visible = true;
+            hide1.Visible = false;
+        }
+
+        // Show Password button click event handler
+        private void visible1_Click(object sender, EventArgs e)
+        {
+            txtPass1.UseSystemPasswordChar = false;
+
+            visible1.Visible = false;
+            hide1.Visible = true;
+        }
+
+        // Hide Password button click event handler
+        private void hide1_Click(object sender, EventArgs e)
+        {
+            txtPass1.UseSystemPasswordChar = true;
+
+            hide1.Visible = false;
+            visible1.Visible = true;
         }
 
         private void btnStud_Click(object sender, EventArgs e)
@@ -72,30 +99,6 @@ namespace LibMS
             }
 
             Hide();
-        }
-
-        private void visible1_Click(object sender, EventArgs e)
-        {
-            txtPass1.UseSystemPasswordChar = true;
-
-            visible1.Visible = false;
-            hide1.Visible = true;
-        }
-
-        private void hide1_Click(object sender, EventArgs e)
-        {
-            txtPass1.UseSystemPasswordChar = false;
-
-            visible1.Visible = true;
-            hide1.Visible = false;
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
         }
     }
 }
