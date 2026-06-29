@@ -70,9 +70,15 @@ namespace LibMS.Controls
         }
 
         private void btnReturnRequest_Click(
-            object sender,
-            EventArgs e)
+    object sender,
+    EventArgs e)
         {
+            lblStatus.Text = "Return Pending";
+            lblStatus.BackColor = Color.Orange;
+            lblStatus.ForeColor = Color.White;
+
+            btnReturnRequest.Visible = false;
+
             ReturnRequested?.Invoke(
                 this,
                 EventArgs.Empty);

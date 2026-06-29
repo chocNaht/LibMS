@@ -45,6 +45,31 @@ namespace LibMS.DBData
                 cmd.ExecuteScalar());
         }
 
+        public bool SubmitReturnRequest(
+    int requestId)
+        {
+            using SqlConnection conn =
+                Database.GetConnection();
+
+            conn.Open();
+
+            string query =
+            @"
+    UPDATE Request
+    SET Status = 'Return Pending'
+    WHERE RequestID = @RequestID
+    ";
+
+            using SqlCommand cmd =
+                new(query, conn);
+
+            cmd.Parameters.AddWithValue(
+                "@RequestID",
+                requestId);
+
+            return cmd.ExecuteNonQuery() > 0;
+        }
+
         public void CancelRequest(int requestId)
         {
             using SqlConnection conn =
@@ -165,31 +190,6 @@ namespace LibMS.DBData
             cmd.Parameters.AddWithValue(
                 "@ReturnDate",
                 returnDate.Date);
-
-            return cmd.ExecuteNonQuery() > 0;
-        }
-
-        public bool SubmitReturnRequest(
-    int requestId)
-        {
-            using SqlConnection conn =
-                Database.GetConnection();
-
-            conn.Open();
-
-            string query =
-            @"
-    UPDATE Request
-    SET Status = 'Return Pending'
-    WHERE RequestID = @RequestID
-    ";
-
-            using SqlCommand cmd =
-                new(query, conn);
-
-            cmd.Parameters.AddWithValue(
-                "@RequestID",
-                requestId);
 
             return cmd.ExecuteNonQuery() > 0;
         }

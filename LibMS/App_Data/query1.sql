@@ -18,4 +18,7 @@
 --(9, 'Psychology (Global Edition)', 'Saundra K. Ciccarelli and J. Noland White', '2014-02-18', 'Pearson', 'Psychology', 'Image\Books\9.jpg', 10, 10),
 --(10, 'Tourism Management (Seventh Edition)', 'Stephen J. Page', '2025-01-05', 'Routledge', 'Tourism', 'Image\Books\10.jpg', 10, 10);
 
-SELECT * FROM Request;
+--SELECT * FROM Request;
+--DELETE Request;
+--DBCC CHECKIDENT ('Request', RESEED, 0);
+--DBCC CHECKIDENT ('Request', NORESEED);

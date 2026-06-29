@@ -3,40 +3,63 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\LibMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\dbdata\\bookrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\dbdata\\bookrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\activitycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\activitycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\controls\\activitycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\activitycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\activitycard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\activitycard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_LIBMS_LIBMS_APP_DATA_DB_LIBMS.MDF/True/SqlTable/dbo.Request.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\bookcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\bookcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.navigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\bookcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\approvedrequestcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\approvedrequestcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\controls\\approvedrequestcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\approvedrequestcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\approvedrequestcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\approvedrequestcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\controls\\activitycard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\controls\\activitycard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\dbdata\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\dbdata\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\student\\studdash.borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|C:\\Users\\user\\Desktop\\LibMS\\libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\student\\studdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|c:\\users\\user\\desktop\\libms\\libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
+      "RelativeMoniker": "D:0:0:{15491311-C94C-C6BE-25D8-65EF0F63616C}|LibMS\\LibMS.csproj|solutionrelative:libms\\app_data\\query1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,59 +85,129 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookCard.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.Designer.cs",
-              "RelativeDocumentMoniker": "LibMS\\Controls\\BookCard.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.Designer.cs",
-              "RelativeToolTip": "LibMS\\Controls\\BookCard.Designer.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAmwGEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T18:23:32.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudDash.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
-              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
-              "RelativeToolTip": "LibMS\\Student\\StudDash.cs",
-              "ViewState": "AgIAAOIAAAAAAAAAAAAswAcBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T17:18:23.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StudDash.Navigation.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Navigation.cs",
-              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Navigation.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Navigation.cs",
-              "RelativeToolTip": "LibMS\\Student\\StudDash.Navigation.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwE8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T17:02:28.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StudDash.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
-              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
-              "RelativeToolTip": "LibMS\\Student\\StudDash.Designer.cs",
-              "ViewState": "AgIAAGoCAAAAAAAAAAAmwIABAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:59:27.932Z",
+              "Title": "dbo.Request [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_USER_DESKTOP_LIBMS_LIBMS_APP_DATA_DB_LIBMS.MDF/True/SqlTable/dbo.Request.sql",
+              "ToolTip": "dbo.Request [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-03T18:51:36.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BookRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\BookRequestRepository.cs",
+              "RelativeDocumentMoniker": "LibMS\\DBData\\BookRequestRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\BookRequestRepository.cs",
+              "RelativeToolTip": "LibMS\\DBData\\BookRequestRepository.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAAAMMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T17:21:56.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudDash.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
+              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Designer.cs",
+              "RelativeToolTip": "LibMS\\Student\\StudDash.Designer.cs",
+              "ViewState": "AgIAAK0BAAAAAAAAAAAawL4IAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T17:13:40.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ActivityCard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.Designer.cs",
+              "RelativeDocumentMoniker": "LibMS\\Controls\\ActivityCard.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.Designer.cs",
+              "RelativeToolTip": "LibMS\\Controls\\ActivityCard.Designer.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAuwHYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T17:13:06.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudDash.Borrow.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Borrow.cs",
+              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.Borrow.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.Borrow.cs",
+              "RelativeToolTip": "LibMS\\Student\\StudDash.Borrow.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAWwFkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T17:00:23.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\BookRepository.cs",
+              "RelativeDocumentMoniker": "LibMS\\DBData\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\DBData\\BookRepository.cs",
+              "RelativeToolTip": "LibMS\\DBData\\BookRepository.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAqwJcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T16:49:47.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "query1.sql ",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\App_Data\\query1.sql",
+              "RelativeDocumentMoniker": "LibMS\\App_Data\\query1.sql",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\App_Data\\query1.sql",
+              "RelativeToolTip": "LibMS\\App_Data\\query1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-03T16:45:29.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudDash.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
+              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
+              "RelativeToolTip": "LibMS\\Student\\StudDash.cs",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAqwBgBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T15:28:21.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApprovedRequestCard.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ApprovedRequestCard.cs",
+              "RelativeDocumentMoniker": "LibMS\\Controls\\ApprovedRequestCard.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ApprovedRequestCard.cs",
+              "RelativeToolTip": "LibMS\\Controls\\ApprovedRequestCard.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T16:11:53.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudDash.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs",
+              "RelativeDocumentMoniker": "LibMS\\Student\\StudDash.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Student\\StudDash.cs [Design]",
+              "RelativeToolTip": "LibMS\\Student\\StudDash.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T13:46:38.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ActivityCard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.cs",
               "RelativeDocumentMoniker": "LibMS\\Controls\\ActivityCard.cs",
@@ -127,44 +220,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ActivityCard.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.Designer.cs",
-              "RelativeDocumentMoniker": "LibMS\\Controls\\ActivityCard.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.Designer.cs*",
-              "RelativeToolTip": "LibMS\\Controls\\ActivityCard.Designer.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAA7wC4AAAAuAAAAAAAAAA==",
+              "Title": "ActivityCard.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.cs",
+              "RelativeDocumentMoniker": "LibMS\\Controls\\ActivityCard.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ActivityCard.cs*",
+              "RelativeToolTip": "LibMS\\Controls\\ActivityCard.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAApwFEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:14:56.665Z",
+              "WhenOpened": "2026-06-03T16:25:33.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApprovedRequestCard.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ApprovedRequestCard.Designer.cs",
-              "RelativeDocumentMoniker": "LibMS\\Controls\\ApprovedRequestCard.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ApprovedRequestCard.Designer.cs",
-              "RelativeToolTip": "LibMS\\Controls\\ApprovedRequestCard.Designer.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwIMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T16:11:43.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookCard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.cs",
-              "RelativeDocumentMoniker": "LibMS\\Controls\\BookCard.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\BookCard.cs [Design]",
-              "RelativeToolTip": "LibMS\\Controls\\BookCard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:44:21.324Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ApprovedRequestCard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\LibMS\\LibMS\\Controls\\ApprovedRequestCard.cs",
               "RelativeDocumentMoniker": "LibMS\\Controls\\ApprovedRequestCard.cs",

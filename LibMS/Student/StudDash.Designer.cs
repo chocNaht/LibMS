@@ -42,7 +42,20 @@ namespace LibMS
             pictureBox1 = new PictureBox();
             alpanel = new Panel();
             panel18 = new Panel();
+            panel20 = new Panel();
+            lblReturnedCount = new Label();
+            pictureBox12 = new PictureBox();
+            label57 = new Label();
+            panel2 = new Panel();
+            lblBorrowedCount = new Label();
+            pictureBox11 = new PictureBox();
+            label53 = new Label();
+            btnRet = new Button();
+            btnBor = new Button();
+            btnAllAct = new Button();
+            label4 = new Label();
             flowActivityLogs = new FlowLayoutPanel();
+            NoItemMessageBR = new Label();
             reqSucPanel = new Panel();
             bookDetPanel = new Panel();
             dashboardPanel = new Panel();
@@ -157,23 +170,15 @@ namespace LibMS
             label25 = new Label();
             btnViewBookReq = new Button();
             label28 = new Label();
-            panel20 = new Panel();
-            lblReturnedCount = new Label();
-            pictureBox12 = new PictureBox();
-            label57 = new Label();
-            panel2 = new Panel();
-            lblBorrowedCount = new Label();
-            pictureBox11 = new PictureBox();
-            label53 = new Label();
-            btnRet = new Button();
-            btnBor = new Button();
-            btnAllAct = new Button();
-            label4 = new Label();
             mainPanel = new Panel();
             panelsidebar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             alpanel.SuspendLayout();
+            panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             reqSucPanel.SuspendLayout();
             bookDetPanel.SuspendLayout();
             dashboardPanel.SuspendLayout();
@@ -204,10 +209,6 @@ namespace LibMS
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel5.SuspendLayout();
             panel8.SuspendLayout();
-            panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             mainPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -362,7 +363,6 @@ namespace LibMS
             // alpanel
             // 
             alpanel.Controls.Add(panel18);
-            //alpanel.Controls.Add(reqSucPanel);
             alpanel.Controls.Add(panel20);
             alpanel.Controls.Add(panel2);
             alpanel.Controls.Add(btnRet);
@@ -376,7 +376,6 @@ namespace LibMS
             alpanel.Name = "alpanel";
             alpanel.Size = new Size(1258, 732);
             alpanel.TabIndex = 4;
-            alpanel.Visible = true;
             // 
             // panel18
             // 
@@ -385,6 +384,147 @@ namespace LibMS
             panel18.Name = "panel18";
             panel18.Size = new Size(844, 431);
             panel18.TabIndex = 6;
+            // 
+            // panel20
+            // 
+            panel20.BackColor = Color.White;
+            panel20.BorderStyle = BorderStyle.FixedSingle;
+            panel20.Controls.Add(lblReturnedCount);
+            panel20.Controls.Add(pictureBox12);
+            panel20.Controls.Add(label57);
+            panel20.Location = new Point(462, 108);
+            panel20.Margin = new Padding(4);
+            panel20.Name = "panel20";
+            panel20.Size = new Size(413, 87);
+            panel20.TabIndex = 9;
+            // 
+            // lblReturnedCount
+            // 
+            lblReturnedCount.AutoSize = true;
+            lblReturnedCount.Location = new Point(8, 43);
+            lblReturnedCount.Name = "lblReturnedCount";
+            lblReturnedCount.Size = new Size(0, 25);
+            lblReturnedCount.TabIndex = 7;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Image = Properties.Resources.circle__1_;
+            pictureBox12.Location = new Point(368, 11);
+            pictureBox12.Margin = new Padding(4);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(39, 34);
+            pictureBox12.TabIndex = 1;
+            pictureBox12.TabStop = false;
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.ForeColor = Color.RoyalBlue;
+            label57.Location = new Point(8, 9);
+            label57.Margin = new Padding(4, 0, 4, 0);
+            label57.Name = "label57";
+            label57.Size = new Size(137, 25);
+            label57.TabIndex = 0;
+            label57.Text = "Returned Books";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(lblBorrowedCount);
+            panel2.Controls.Add(pictureBox11);
+            panel2.Controls.Add(label53);
+            panel2.Location = new Point(32, 108);
+            panel2.Margin = new Padding(4);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(413, 87);
+            panel2.TabIndex = 8;
+            // 
+            // lblBorrowedCount
+            // 
+            lblBorrowedCount.AutoSize = true;
+            lblBorrowedCount.Location = new Point(7, 45);
+            lblBorrowedCount.Name = "lblBorrowedCount";
+            lblBorrowedCount.Size = new Size(0, 25);
+            lblBorrowedCount.TabIndex = 6;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = Properties.Resources.book__1_;
+            pictureBox11.Location = new Point(368, 11);
+            pictureBox11.Margin = new Padding(4);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(39, 34);
+            pictureBox11.TabIndex = 1;
+            pictureBox11.TabStop = false;
+            // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.ForeColor = Color.RoyalBlue;
+            label53.Location = new Point(8, 9);
+            label53.Margin = new Padding(4, 0, 4, 0);
+            label53.Name = "label53";
+            label53.Size = new Size(143, 25);
+            label53.TabIndex = 0;
+            label53.Text = "Borrowed Books";
+            // 
+            // btnRet
+            // 
+            btnRet.FlatAppearance.BorderColor = Color.RoyalBlue;
+            btnRet.FlatStyle = FlatStyle.Flat;
+            btnRet.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRet.ForeColor = Color.RoyalBlue;
+            btnRet.Location = new Point(314, 214);
+            btnRet.Margin = new Padding(4);
+            btnRet.Name = "btnRet";
+            btnRet.Size = new Size(132, 42);
+            btnRet.TabIndex = 5;
+            btnRet.Text = "Returned";
+            btnRet.UseVisualStyleBackColor = true;
+            btnRet.Click += btnRet_Click;
+            // 
+            // btnBor
+            // 
+            btnBor.FlatAppearance.BorderColor = Color.RoyalBlue;
+            btnBor.FlatStyle = FlatStyle.Flat;
+            btnBor.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBor.ForeColor = Color.RoyalBlue;
+            btnBor.Location = new Point(174, 214);
+            btnBor.Margin = new Padding(4);
+            btnBor.Name = "btnBor";
+            btnBor.Size = new Size(132, 42);
+            btnBor.TabIndex = 4;
+            btnBor.Text = "Borrowed";
+            btnBor.UseVisualStyleBackColor = true;
+            btnBor.Click += btnBor_Click;
+            // 
+            // btnAllAct
+            // 
+            btnAllAct.FlatAppearance.BorderColor = Color.RoyalBlue;
+            btnAllAct.FlatStyle = FlatStyle.Flat;
+            btnAllAct.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAllAct.ForeColor = Color.RoyalBlue;
+            btnAllAct.Location = new Point(34, 214);
+            btnAllAct.Margin = new Padding(4);
+            btnAllAct.Name = "btnAllAct";
+            btnAllAct.Size = new Size(132, 42);
+            btnAllAct.TabIndex = 3;
+            btnAllAct.Text = "All Activity";
+            btnAllAct.UseVisualStyleBackColor = true;
+            btnAllAct.Click += btnAllAct_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.RoyalBlue;
+            label4.Location = new Point(34, 40);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(174, 38);
+            label4.TabIndex = 0;
+            label4.Text = "Activity Log";
             // 
             // flowActivityLogs
             // 
@@ -395,6 +535,17 @@ namespace LibMS
             flowActivityLogs.Size = new Size(840, 400);
             flowActivityLogs.TabIndex = 6;
             flowActivityLogs.WrapContents = false;
+            // 
+            // NoItemMessageBR
+            // 
+            NoItemMessageBR.AutoSize = true;
+            NoItemMessageBR.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            NoItemMessageBR.Location = new Point(313, 400);
+            NoItemMessageBR.Name = "NoItemMessageBR";
+            NoItemMessageBR.Size = new Size(307, 54);
+            NoItemMessageBR.TabIndex = 18;
+            NoItemMessageBR.Text = "No Item Found";
+            NoItemMessageBR.Visible = true;
             // 
             // reqSucPanel
             // 
@@ -491,6 +642,7 @@ namespace LibMS
             approvedPanel.Controls.Add(label49);
             approvedPanel.Controls.Add(label50);
             approvedPanel.Controls.Add(brEditPanel);
+            approvedPanel.Controls.Add(NoItemMessageBR);
             approvedPanel.Dock = DockStyle.Fill;
             approvedPanel.Location = new Point(0, 0);
             approvedPanel.Margin = new Padding(4);
@@ -1281,7 +1433,6 @@ namespace LibMS
             txtSearch1.PlaceholderText = "Search books  by title or author...";
             txtSearch1.Size = new Size(775, 34);
             txtSearch1.TabIndex = 1;
-            txtSearch1.TextAlign = HorizontalAlignment.Left;
             txtSearch1.TextChanged += txtSearch1_TextChanged;
             // 
             // lblBookCat
@@ -1706,7 +1857,7 @@ namespace LibMS
             label18.Name = "label18";
             label18.Size = new Size(56, 32);
             label18.TabIndex = 1;
-            label18.Text = "001";
+            label18.Text = "";
             // 
             // label19
             // 
@@ -1859,147 +2010,6 @@ namespace LibMS
             label28.TabIndex = 0;
             label28.Text = "Borrow Request Submitted";
             // 
-            // panel20
-            // 
-            panel20.BackColor = Color.White;
-            panel20.BorderStyle = BorderStyle.FixedSingle;
-            panel20.Controls.Add(lblReturnedCount);
-            panel20.Controls.Add(pictureBox12);
-            panel20.Controls.Add(label57);
-            panel20.Location = new Point(462, 108);
-            panel20.Margin = new Padding(4);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(413, 87);
-            panel20.TabIndex = 9;
-            // 
-            // lblReturnedCount
-            // 
-            lblReturnedCount.AutoSize = true;
-            lblReturnedCount.Location = new Point(8, 43);
-            lblReturnedCount.Name = "lblReturnedCount";
-            lblReturnedCount.Size = new Size(0, 25);
-            lblReturnedCount.TabIndex = 7;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Image = Properties.Resources.circle__1_;
-            pictureBox12.Location = new Point(368, 11);
-            pictureBox12.Margin = new Padding(4);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(39, 34);
-            pictureBox12.TabIndex = 1;
-            pictureBox12.TabStop = false;
-            // 
-            // label57
-            // 
-            label57.AutoSize = true;
-            label57.ForeColor = Color.RoyalBlue;
-            label57.Location = new Point(8, 9);
-            label57.Margin = new Padding(4, 0, 4, 0);
-            label57.Name = "label57";
-            label57.Size = new Size(137, 25);
-            label57.TabIndex = 0;
-            label57.Text = "Returned Books";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(lblBorrowedCount);
-            panel2.Controls.Add(pictureBox11);
-            panel2.Controls.Add(label53);
-            panel2.Location = new Point(32, 108);
-            panel2.Margin = new Padding(4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(413, 87);
-            panel2.TabIndex = 8;
-            // 
-            // lblBorrowedCount
-            // 
-            lblBorrowedCount.AutoSize = true;
-            lblBorrowedCount.Location = new Point(7, 45);
-            lblBorrowedCount.Name = "lblBorrowedCount";
-            lblBorrowedCount.Size = new Size(0, 25);
-            lblBorrowedCount.TabIndex = 6;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Image = Properties.Resources.book__1_;
-            pictureBox11.Location = new Point(368, 11);
-            pictureBox11.Margin = new Padding(4);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(39, 34);
-            pictureBox11.TabIndex = 1;
-            pictureBox11.TabStop = false;
-            // 
-            // label53
-            // 
-            label53.AutoSize = true;
-            label53.ForeColor = Color.RoyalBlue;
-            label53.Location = new Point(8, 9);
-            label53.Margin = new Padding(4, 0, 4, 0);
-            label53.Name = "label53";
-            label53.Size = new Size(143, 25);
-            label53.TabIndex = 0;
-            label53.Text = "Borrowed Books";
-            // 
-            // btnRet
-            // 
-            btnRet.FlatAppearance.BorderColor = Color.RoyalBlue;
-            btnRet.FlatStyle = FlatStyle.Flat;
-            btnRet.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRet.ForeColor = Color.RoyalBlue;
-            btnRet.Location = new Point(314, 214);
-            btnRet.Margin = new Padding(4);
-            btnRet.Name = "btnRet";
-            btnRet.Size = new Size(132, 42);
-            btnRet.TabIndex = 5;
-            btnRet.Text = "Returned";
-            btnRet.UseVisualStyleBackColor = true;
-            btnRet.Click += btnRet_Click;
-            // 
-            // btnBor
-            // 
-            btnBor.FlatAppearance.BorderColor = Color.RoyalBlue;
-            btnBor.FlatStyle = FlatStyle.Flat;
-            btnBor.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBor.ForeColor = Color.RoyalBlue;
-            btnBor.Location = new Point(174, 214);
-            btnBor.Margin = new Padding(4);
-            btnBor.Name = "btnBor";
-            btnBor.Size = new Size(132, 42);
-            btnBor.TabIndex = 4;
-            btnBor.Text = "Borrowed";
-            btnBor.UseVisualStyleBackColor = true;
-            btnBor.Click += btnBor_Click;
-            // 
-            // btnAllAct
-            // 
-            btnAllAct.FlatAppearance.BorderColor = Color.RoyalBlue;
-            btnAllAct.FlatStyle = FlatStyle.Flat;
-            btnAllAct.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAllAct.ForeColor = Color.RoyalBlue;
-            btnAllAct.Location = new Point(34, 214);
-            btnAllAct.Margin = new Padding(4);
-            btnAllAct.Name = "btnAllAct";
-            btnAllAct.Size = new Size(132, 42);
-            btnAllAct.TabIndex = 3;
-            btnAllAct.Text = "All Activity";
-            btnAllAct.UseVisualStyleBackColor = true;
-            btnAllAct.Click += btnAllAct_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.RoyalBlue;
-            label4.Location = new Point(34, 40);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(174, 38);
-            label4.TabIndex = 0;
-            label4.Text = "Activity Log";
-            // 
             // mainPanel
             // 
             mainPanel.Controls.Add(alpanel);
@@ -2029,6 +2039,12 @@ namespace LibMS
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             alpanel.ResumeLayout(false);
             alpanel.PerformLayout();
+            panel20.ResumeLayout(false);
+            panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             reqSucPanel.ResumeLayout(false);
             reqSucPanel.PerformLayout();
             bookDetPanel.ResumeLayout(false);
@@ -2076,12 +2092,6 @@ namespace LibMS
             panel5.PerformLayout();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            panel20.ResumeLayout(false);
-            panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             mainPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -2228,5 +2238,6 @@ namespace LibMS
         private Label lblReturnedCount;
         private Label lblBorrowedCount;
         private TableLayoutPanel tableLayoutPanel1;
+        private Label NoItemMessageBR;
     }
 }

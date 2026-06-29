@@ -87,6 +87,8 @@ namespace LibMS
             panel6.Visible = true;
             panel6.BringToFront();
 
+            label18.Text = $"Request ID: {requestId:D3}";
+
             lblReqBook.Text =
                 $"Book: {_selectedBook.Title}";
 

@@ -24,6 +24,7 @@ namespace LibMS.Controls
             {
                 CancelClicked?.Invoke(this, EventArgs.Empty);
             };
+
         }
 
         public void LoadData(
@@ -34,6 +35,7 @@ namespace LibMS.Controls
             string slipNumber,
             string status)
         {
+
             RequestID = requestId;
             lblBookTitle.Text = title;
 
@@ -46,14 +48,11 @@ namespace LibMS.Controls
             lblReturnDate.Text =
                 $"Return Date: {returnDate:yyyy-MM-dd}";
 
-            lblSlipNumber.Text =
-                string.IsNullOrWhiteSpace(slipNumber)
-                ? "Slip Number: Pending"
-                : $"Slip Number: {slipNumber}";
+            lblSlipNumber.Text = $"Slip Number: {slipNumber}";
 
             lblStatus.Text =
                 status.ToUpper();
-
+            
             switch (status.ToUpper())
             {
                 case "PENDING":

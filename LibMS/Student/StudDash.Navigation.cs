@@ -67,6 +67,8 @@ namespace LibMS
             approvedPanel.Visible = true;
             approvedPanel.BringToFront();
 
+
+
             LoadApprovedRequests();
         }
 

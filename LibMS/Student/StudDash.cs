@@ -244,6 +244,28 @@ namespace LibMS
             }
         }
 
+        private void SubmitReturnRequest(int requestId)
+        {
+            var repo = new BookRequestRepository();
+
+            bool success =
+                repo.SubmitReturnRequest(requestId);
+
+            if (success)
+            {
+                MessageBox.Show(
+                    "Return request submitted successfully.");
+
+                LoadActivityLogs();
+                LoadActivitySummary();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Failed to submit return request.");
+            }
+        }
+
         private void LoadActivitySummary()
         {
             BookRequestRepository repo = new();
@@ -288,27 +310,6 @@ namespace LibMS
 
                 flowActivityLogs.Controls.Add(card);
             }
-        }
-
-        private void SubmitReturnRequest(
-    int requestId)
-        {
-            DialogResult result =
-                MessageBox.Show(
-                    "Submit return request?",
-                    "Return Book",
-                    MessageBoxButtons.YesNo);
-
-            if (result != DialogResult.Yes)
-                return;
-
-            BookRequestRepository repo =
-                new();
-
-            repo.SubmitReturnRequest(
-                requestId);
-
-            LoadActivityLogs();
         }
     }
 }

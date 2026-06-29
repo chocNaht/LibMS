@@ -238,27 +238,29 @@ public class BookRepository
 
         while (reader.Read())
         {
-            requests.Add(
-                new BookRequest
-                {
-                    RequestID =
-                        Convert.ToInt32(
-                            reader["RequestID"]),
+            requests.Add( new BookRequest
+            {
+                RequestID =
+                    Convert.ToInt32(
+                        reader["RequestID"]),
 
-                    BookTitle =
-                        reader["Title"].ToString()!,
+                BookTitle =
+                    reader["Title"].ToString()!,
 
-                    BorrowDate =
-                        Convert.ToDateTime(
-                            reader["BorrowDate"]),
+                BorrowDate =
+                    Convert.ToDateTime(
+                        reader["BorrowDate"]),
 
-                    ReturnDate =
-                        Convert.ToDateTime(
-                            reader["ReturnDate"]),
+                ReturnDate =
+                    Convert.ToDateTime(
+                        reader["ReturnDate"]),
 
-                    Status =
-                        reader["Status"].ToString()!
-                });
+                Status =
+                    reader["Status"].ToString()!,
+
+                SlipNumber =
+                    $"SLIP-{reader["RequestID"]}"
+            });
         }
 
         return requests;

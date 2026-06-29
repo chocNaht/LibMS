@@ -116,6 +116,7 @@
             btnReturnRequest.TabIndex = 0;
             btnReturnRequest.Text = "Submit Return Request";
             btnReturnRequest.UseVisualStyleBackColor = false;
+            btnReturnRequest.Click += btnReturnRequest_Click;
             // 
             // tableLayoutPanel2
             // 
